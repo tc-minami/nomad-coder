@@ -55,3 +55,12 @@ margin-right: 8px;
     border-bottom: solid 2px tomato;
     display: inline;
 }
+
+.prettyprint ol.linenums > li {
+  list-style-type: decimal;
+}
+
+pre.prettyprint {
+  white-space: pre;
+  overflow: auto;
+}
