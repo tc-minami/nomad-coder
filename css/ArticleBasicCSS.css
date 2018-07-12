@@ -1,4 +1,4 @@
-.article h1 {
+h1 {
     position: relative;
     background: #dfefff;
     box-shadow: 0px 0px 0px 5px #dfefff;
@@ -7,7 +7,7 @@
     color: #454545;
 }
 
-.article h1:after {
+h1:after {
     position: absolute;
     content: '';
     left: -7px;
