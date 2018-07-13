@@ -10,9 +10,7 @@
         <!-- <link href="https://tc-minami.github.io/css/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"/> -->
         <script src="https://tc-minami.github.io/css/google-code-prettify/run_prettify.js?skin=sons-of-obsidian" async="async" defer="defer"></script>
         <!-- 自作CSS -->
-        <!--
-        <link href="https://tc-minami.github.io/css/ArticleBasicCSS.css" rel="stylesheet" type="text/css"/>
-        -->
+        <!-- <link href="https://tc-minami.github.io/css/ArticleBasicCSS.css" rel="stylesheet" type="text/css"/> -->
         <link href="./../../css/ArticleBasicCSS.css" rel="stylesheet" type="text/css"/>
 
         <!-- 追加コード Header ここまで -->
@@ -21,26 +19,31 @@
     <body>
         <div class="article">
             <p><a href="https://tc-minami.blogspot.com/2018/06/blog-post_25.html">以前の記事</a>で<b>Atom使ってマークダウンで記事書けばすっごい楽！</b>ということを書きましたが、色々試しているうちにどうやらマークダウンだけでは少々問題がありそうだったので、主な問題とその解決方法について書いていきます。</p>
-            <p>まぁタイトルから既に分かるとは思うので、先に結論だけ共有しておくと結局<b class="underline-red">CSSやHTMLを使うことになりました。</b></p>
+            <p>まぁタイトルから既に分かるとは思うので、先に結論だけ共有しておくと結局<b>CSSやHTMLを使うことになりました。</b></p>
+            <p>ので、今回はブログ初心者である自分がどのような問題に直面し、どのように対応したかをまとめていきます。</p>
 
-            <br>
             <h1>マークダウンのみの課題</h1>
             <p>前提として、正直なところマークダウンが悪いというより、自分がウェブページの装飾について無知なのが原因な気がしなくもないです…。<p>
             <p>なのでこれから話す内容は「マークダウンでもできるよ！」とか「設定が悪いだけだ！」とかかも知れませんが、ご了承ください。</p>
 
-            <h2>全体的な見栄えのバランス</h2>
+
+            <h2>ソースコード等の特殊な文章の見せ方</h2>
             <p>ブログのテンプレートデザインのみを使用した場合、パット見デザインもよく、正直文字サイズや色を変更するだけでも良いかなと思っていました。</p>
             <p><b>ただし</b>箇条書きだったり、特にソースコード等特殊な文章を記事内に記述する場合、正直あまり見栄えが良いとは言えない状態でした。（ここに関しては自分が選んだブログテンプレートや、Atomのマークダウン設定の問題かもしれませんが…。）</p>
 
             <p>たとえばですが、私が使っていたブログテンプレート上を使用し、Atomでマークダウン記述してからHTMLとして出力した文字列をそのまま記事にした場合、以下のような見た目になります。</p>
 
-            <p>ぱっと見では全くわからないと思いますが、これ実は<span><code class="prettyprint">This is code</code></span></p>
-
-http://www.life-gp.net/2013/08/syntaxhighlighterblogger.html
-
             <a href="https://tc-minami.github.io/res/img/ScreenCapture_2018-07-12_20.24.23.png">
                 <img src="https://tc-minami.github.io/res/img/ScreenCapture_2018-07-12_20.24.23.png" alt="旧記事でのソースコード表示方法" title="旧記事でのソースコード表示方法" width="500">
             </a>
+
+            <p>これ実はソースコードを貼っているのですが、普通の文章に紛れ込んだみたいになってしまっています。正直見づらいしどこからどこまでがソースコードなのかも分からないです。</p>
+            <p>技術ブログを始めようと思った手前、流石にソースコードが見づらくては意味がない。というのが今回HTMLを書こう！と思ったきっかけです。</p>
+
+            <h1>解決方法</h1>
+            <p>結論から</p>
+            <!-- <p>ぱっと見では全くわからないと思いますが、これ実は<span><code class="code-inline">This is code</code></span></p> -->
+
 
             <pre class="prettyprint linenums">
 int a = 0;
