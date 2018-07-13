@@ -1,4 +1,4 @@
-post-title entry-title {
+.post-title.entry-title {
     position: relative;
     background: #dfefff;
     box-shadow: 0px 0px 0px 5px #dfefff;
@@ -7,7 +7,7 @@ post-title entry-title {
     color: #454545;
 }
 
-post-title entry-title:after {
+.post-title.entry-title:after {
     position: absolute;
     content: '';
     left: -7px;
@@ -18,7 +18,7 @@ post-title entry-title:after {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-h1 {
+.article h1 {
     position: relative;
     background: #f4a460;
     box-shadow: 0px 0px 0px 5px #f4a460;
@@ -27,7 +27,7 @@ h1 {
     color: #454545;
 }
 
-h1:after {
+.article h1:after {
     position: absolute;
     content: '';
     left: -7px;
