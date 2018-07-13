@@ -1,4 +1,4 @@
-.post-title.entry-title {
+/* .post-title.entry-title {
     position: relative;
     background: #ffb6c1;
     box-shadow: 0px 0px 0px 5px #ffb6c1;
@@ -15,10 +15,10 @@
 }
 
 .article h2 {
-    padding: 0.25em 0.5em;/*上下 左右の余白*/
-    color: #696969;/*文字色*/
-    background: transparent;/*背景透明に*/
-    border-left: solid 5px #ffb6c1;/*左線*/
+    padding: 0.25em 0.5em;
+    color: #696969;
+    background: transparent;
+    border-left: solid 5px #ffb6c1;/
 }
 
 .article h3 {
@@ -40,7 +40,6 @@
     border-color: #fff #fff #cd853f;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
-/*
 
 .article h2 {
   position: relative;
@@ -57,16 +56,16 @@ border: 15px solid transparent;
 border-top: 15px solid #e0edff;
 width: 0;
 height: 0;
-} */
+}
 
 .article h4 {
-color: #505050;/*文字色*/
-padding: 0.5em;/*文字周りの余白*/
-display: inline-block;/*おまじない*/
-line-height: 1.3;/*行高*/
-background: #dbebf8;/*背景色*/
-vertical-align: middle;/*上下中央*/
-border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+color: #505050;
+padding: 0.5em;
+display: inline-block;
+line-height: 1.3;
+background: #dbebf8;
+vertical-align: middle;
+border-radius: 25px 0px 0px 25px;
 }
 
 .article h4:before {
@@ -88,3 +87,4 @@ margin-right: 8px;
   white-space: pre;
   overflow: auto;
 }
+*/
