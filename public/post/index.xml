@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Nomad Coder</title>
-    <link>https://tc_minami.github.io/post/</link>
+    <link>https://tc-minami.github.io/nomad-coder/post/</link>
     <description>Recent content in Posts on Nomad Coder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 12 Dec 2018 08:00:00 +0700</lastBuildDate>
     
-	<atom:link href="https://tc_minami.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tc-minami.github.io/nomad-coder/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo &#43; GitHub Pagesでブログ作成してみた件</title>
-      <link>https://tc_minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/</link>
+      <link>https://tc-minami.github.io/nomad-coder/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/</link>
       <pubDate>Wed, 12 Dec 2018 08:00:00 +0700</pubDate>
       
-      <guid>https://tc_minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/</guid>
+      <guid>https://tc-minami.github.io/nomad-coder/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/</guid>
       <description>見切り発車満載ですが、以前まで試していた自作CSSでのブログ開発は一旦止めて、Hugoを使ってブログを進めてみようかと思います。
 なぜHugoに変更するか Hugo自体がどれだけ凄いのか、とは他の選択肢は？というのは正直よくわかっていません。現状言えるのは今のブログのトレンドが静的サイトジェネレーターを使うっぽいという事と、単にHugoという名前をよく見かけたからです。
 なのでとりあえずはHugoを使って色々試して、もしかしたらまた何かに以降する可能性はあります。今の所は手軽にブログが書けて、三日坊主にならない方法を模索したい感じですね。 （前回はCSSの勉強、というよりデザインのダメダメさ、がキツくて意欲だだ下がりしていたので…）
@@ -38,10 +38,10 @@ Hugoの凄い所 今回初めてHugoを使って、今始めての記事を書�
     
     <item>
       <title>更新テスト</title>
-      <link>https://tc_minami.github.io/2018/12/%E6%9B%B4%E6%96%B0%E3%83%86%E3%82%B9%E3%83%88/</link>
+      <link>https://tc-minami.github.io/nomad-coder/2018/12/%E6%9B%B4%E6%96%B0%E3%83%86%E3%82%B9%E3%83%88/</link>
       <pubDate>Mon, 10 Dec 2018 16:44:10 +0700</pubDate>
       
-      <guid>https://tc_minami.github.io/2018/12/%E6%9B%B4%E6%96%B0%E3%83%86%E3%82%B9%E3%83%88/</guid>
+      <guid>https://tc-minami.github.io/nomad-coder/2018/12/%E6%9B%B4%E6%96%B0%E3%83%86%E3%82%B9%E3%83%88/</guid>
       <description></description>
     </item>
     
