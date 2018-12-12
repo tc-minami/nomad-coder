@@ -8,8 +8,8 @@ categories:
 tags:
 - 雑記
 
-thumbnailImagePosition: left
-thumbnailImage: /img/profile_image.png
+#thumbnailImagePosition: left
+#thumbnailImage: /img/profile_image.png
 
 summary: "見切り発車満載ですが、以前まで試していた自作CSSでのブログ開発は一旦止めて、Hugoを使ってブログを進めてみようかと思います。"
 ---

@@ -18,7 +18,7 @@ defaultContentLanguage = "ja"
 title = "ノマドコーダー"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "hugo-tranquilpeak-theme"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-44238770-4"
 paginate = 7
 canonifyurls = true
 
@@ -39,7 +39,7 @@ canonifyurls = true
   # gravatarEmail = "table.cloth.03@gmail.com"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "/img/profile_image.png"
+  picture = "https://user-images.githubusercontent.com/8590431/49858824-8f3bad80-fe28-11e8-8144-ae707c9fec8c.png"
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
