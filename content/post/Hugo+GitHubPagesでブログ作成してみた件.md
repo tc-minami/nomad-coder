@@ -8,6 +8,9 @@ categories:
 tags:
 - 雑記
 
+thumbnailImagePosition: left
+thumbnailImage: /img/profile_image.png
+
 summary: "見切り発車満載ですが、以前まで試していた自作CSSでのブログ開発は一旦止めて、Hugoを使ってブログを進めてみようかと思います。"
 ---
 
@@ -49,3 +52,5 @@ Web関係からっきし(ry)
 とりあえずHugoに移行して、Github Pages使って無料でブログ運用したいなー、出来れば広告とか入れてお小遣い欲しいなーと思っていますが、まずは三日坊主にならないように頑張りたいと思います。
 
 あと簡単な **太字**、`Code`の記述はいつもどおりできるけど、色文字やフォントの調整とか色々覚えていかないとですね。
+
+<!-- {{< figure src="https://user-images.githubusercontent.com/8590431/49858824-8f3bad80-fe28-11e8-8144-ae707c9fec8c.png" title="適度にがんばります。" class="center" width="256" height="256" >}} -->
