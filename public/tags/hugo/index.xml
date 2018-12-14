@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>雑記 on ノマドコーダー</title>
-    <link>https://tc-minami.github.io/tags/%E9%9B%91%E8%A8%98/</link>
-    <description>Recent content in 雑記 on ノマドコーダー</description>
+    <title>Hugo on ノマドコーダー</title>
+    <link>https://tc-minami.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on ノマドコーダー</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 12 Dec 2018 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 13 Dec 2018 01:16:14 +0700</lastBuildDate>
     
-	<atom:link href="https://tc-minami.github.io/tags/%E9%9B%91%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tc-minami.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>画像の管理について</title>
+      <link>https://tc-minami.github.io/2018/12/%E7%94%BB%E5%83%8F%E3%81%AE%E7%AE%A1%E7%90%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
+      <pubDate>Thu, 13 Dec 2018 01:16:14 +0700</pubDate>
+      
+      <guid>https://tc-minami.github.io/2018/12/%E7%94%BB%E5%83%8F%E3%81%AE%E7%AE%A1%E7%90%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
+      <description>画像の管理について気になったこと 先日Hugoを触り始めて、ようやくGitHub Pagesに反映+公開が終わったけれども…ブログの管理で1つ懸念があったため調査してみました。
+それはファイル容量制限とか大丈夫なん？という点です。
+軽く調べた所、Hugo的には↓のようにstaticフォルダ配下に画像を置いて、「ファイルパス使ってそこ参照してね♪」ってなってるっぽい。
+一般的にはそれで問題ないと思うけどGitHub Pages使っている以上あまり重たいファイルはリポジトリ内に置きたくなかったりするので、なんとか別の方法を考えてみることに…。
+[Hugoのフォルダ構成] GitHubを使った画像管理方法 DropboxやらGoogleDriveやら、無料で使えそうなサービスはいくつかあったのですが、今回せっかく全てをGitHubに寄せているのでファイル管理もGitHubに丸投げすることにしました。
+実はGitHubのIssueって画像や動画をドラッグ＆ドロップするだけでGitHub側が勝手にUploadしてくれて、URLまで出力してくれます。そのため今回はリソースファイル専用のRepositoryとIssueを立てて、そこに各種ファイルをUpしてみることにしました。
+[GitHubに画像をUploadする方法] ※恐らくRepositoryを分ける必要はないと思うのですが、GitHub的に1Repositoryで1GBを超えるのは好ましくないようなので、念の為切り分けてあります。
+※Issueに貼り付けた画像がこの容量としてカウントされるのかは不明です。</description>
+    </item>
     
     <item>
       <title>Hugo &#43; GitHub Pagesでブログ作成してみた件</title>

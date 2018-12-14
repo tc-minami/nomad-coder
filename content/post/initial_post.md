@@ -17,7 +17,16 @@ coverImage: //d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg
 metaAlignment: center
 
 
-draft: false
+draft: true
 ---
+
+<span class="b">あああ</span>あああ
+
+<span class="b">ああああああ</span>
+
+<span class="b red large dul">いいいいいいい</span>
+
+ううううう
+<!-- ![nc-002](https://user-images.githubusercontent.com/8590431/49889625-98eb0280-fe74-11e8-9481-636895542e5f.gif) -->
 
 <!--more-->

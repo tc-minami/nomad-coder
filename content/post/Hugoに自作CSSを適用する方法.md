@@ -1,0 +1,55 @@
+---
+title: "Hugoに自作CSSを適用する方法"
+date: 2018-12-13T11:38:33+07:00
+draft: false
+
+categories:
+- 開発
+tags:
+- 開発
+- Hugo
+- CSS
+
+thumbnailImagePosition: "left"
+thumbnailImage: https://user-images.githubusercontent.com/8590431/49916201-68cf4e00-fecc-11e8-85a6-73fc7b435f57.png
+
+summary: "Hugoで作成したウェブページに自作CSSを反映させる方法について。"
+
+---
+
+<a href="../hugo-github-pagesでブログ作成してみた件/">以前</a>Hugoでブログはじめました～！って時に<b>色の付け方がわからない</b>とか言ってましたが、思ったより簡単に出来たので方法をまとめておきます。<br>
+<span class="gray small"><b>以前の記事で触れてたフォントの変更方法もわかったけど、そもそも使いたいフォントを探していないので今回はスルーします。（）</b></span>
+
+## 自作CSSを適用するために必要なもの
+1. 自作CSS<br>
+以上。
+
+今回は以下な感じでどシンプルなcssを書いてみました。
+
+``` css
+/*
+Basic css for Text related things.
+
+Color info
+https://www.wanichan.com/web/resources/color.html
+*/
+span.b { font-weight: bold; }
+
+span.red { color: orangered; }
+span.gray { color: darkgray; }
+
+span.large { font-size: 1.5em; }
+span.small { font-size: 0.75em; }
+
+span.ul { border-bottom: solid 3px;}
+span.ul-red { border-bottom: solid 3px orangered;}
+span.ul-gray { border-bottom: solid 3px darkgray;}
+span.dul { border-bottom: dotted 3px;}
+span.slash { text-decoration: line-through; }
+```
+## 自作CSSを適用する方法
+1. プロジェクト直下の`static`フォルダ配下にcssファイルを配置する。
+    - 画像ファイル等を置いている`static`フォルダを同じ場所です。
+2. `themes`以下で`css`を取り込んでいる`html`ファイルを検索する。
+    - `<link rel="stylesheet" href="`で検索し、他の`css`を取り込んでいる場所を探しました。
+    - そこに自作した`css`を取り込むコードを以下のように記述するだけで、一瞬で反映されます。

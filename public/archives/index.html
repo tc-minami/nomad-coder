@@ -225,12 +225,12 @@ if (!doNotTrack) {
         <ul class="archive-posts archive-month" data-date="201812">
           <h5 class="archive-title" style="text-decoration: none;">12月</h5>
           
-            <li class="archive-post archive-day" data-date="20181212">
-              <a class="archive-post-title" href="https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">Hugo &#43; GitHub Pagesでブログ作成してみた件</a>
+            <li class="archive-post archive-day" data-date="20181213">
+              <a class="archive-post-title" href="https://tc-minami.github.io/2018/12/%E7%94%BB%E5%83%8F%E3%81%AE%E7%AE%A1%E7%90%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">画像の管理について</a>
             </li>
           
-            <li class="archive-post archive-day" data-date="20181210">
-              <a class="archive-post-title" href="https://tc-minami.github.io/2018/12/%E6%9B%B4%E6%96%B0%E3%83%86%E3%82%B9%E3%83%88/">更新テスト</a>
+            <li class="archive-post archive-day" data-date="20181212">
+              <a class="archive-post-title" href="https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">Hugo &#43; GitHub Pagesでブログ作成してみた件</a>
             </li>
           
         </ul>
@@ -291,6 +291,30 @@ if (!doNotTrack) {
           <div class="media">
             
             <div class="media-body">
+              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/%E7%94%BB%E5%83%8F%E3%81%AE%E7%AE%A1%E7%90%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">
+                <h3 class="media-heading">画像の管理について</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Dec 12, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">画像の管理について気になったこと 先日Hugoを触り始めて、ようやくGitHub Pagesに反映+公開が終わったけれども…ブログの管理で1つ懸念があったため調査してみました。
+それはファイル容量制限とか大丈夫なん？という点です。
+軽く調べた所、Hugo的には↓のようにstaticフォルダ配下に画像を置いて、「ファイルパス使ってそこ参照してね♪」ってなってるっぽい。
+一般的にはそれで問題ないと思うけどGitHub Pages使っている以上あまり重たいファイルはリポジトリ内に置きたくなかったりするので、なんとか別の方法を考えてみることに…。
+[Hugoのフォルダ構成] GitHubを使った画像管理方法 DropboxやらGoogleDriveやら、無料で使えそうなサービスはいくつかあったのですが、今回せっかく全てをGitHubに寄せているのでファイル管理もGitHubに丸投げすることにしました。
+実はGitHubのIssueって画像や動画をドラッグ＆ドロップするだけでGitHub側が勝手にUploadしてくれて、URLまで出力してくれます。そのため今回はリソースファイル専用のRepositoryとIssueを立てて、そこに各種ファイルをUpしてみることにしました。
+[GitHubに画像をUploadする方法] ※恐らくRepositoryを分ける必要はないと思うのですが、GitHub的に1Repositoryで1GBを超えるのは好ましくないようなので、念の為切り分けてあります。
+※Issueに貼り付けた画像がこの容量としてカウントされるのかは不明です。</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
               <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
                 <h3 class="media-heading">Hugo &#43; GitHub Pagesでブログ作成してみた件</h3>
               </a>
@@ -317,23 +341,6 @@ Hugoの凄い所 今回初めてHugoを使って、今始めての記事を書�
 まとめ とりあえずHugoに移行して、Github Pages使って無料でブログ運用したいなー、出来れば広告とか入れてお小遣い欲しいなーと思っていますが、まずは三日坊主にならないように頑張りたいと思います。
 あと簡単な 太字、Codeの記述はいつもどおりできるけど、色文字やフォントの調整とか色々覚えていかないとですね。
  適度にがんばります。   -- </div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/%E6%9B%B4%E6%96%B0%E3%83%86%E3%82%B9%E3%83%88/">
-                <h3 class="media-heading">更新テスト</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Dec 12, 2018
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"></div>
             </div>
             <div style="clear:both;"></div>
             <hr>

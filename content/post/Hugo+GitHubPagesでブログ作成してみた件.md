@@ -4,9 +4,11 @@ date: 2018-12-12T08:00:00+07:00
 draft: false
 
 categories:
-- 雑記
+- 開発
 tags:
-- 雑記
+- 開発
+- Hugo
+- GitHub
 
 #thumbnailImagePosition: left
 #thumbnailImage: /img/profile_image.png
