@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-
+    
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.52 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="南ひろあき">
-<meta name="keywords" content=", ノマドコーダー, Nomad Coder, 開発, 開発ブログ, 技術ブログ">
+<meta name="keywords" content="Hugo, Github, GitHub pages, ブログ, ノマドコーダー, Nomad Coder, 開発, 開発ブログ, 技術ブログ, 技術, ノマド, コーダー">
 <meta name="description" content=" 見切り発車満載ですが、以前まで試していた自作CSSでのブログ開発は一旦止めて、Hugoを使ってブログを進めてみようかと思います。
 なぜHugoに変更するか Hugo自体がどれだけ凄いのか、とは他の選択肢は？というのは正直よくわかっていません。現状言えるのは今のブログのトレンドが静的サイトジェネレーターを使うっぽいという事と、単にHugoという名前をよく見かけたからです。
 なのでとりあえずはHugoを使って色々試して、もしかしたらまた何かに以降する可能性はあります。今の所は手軽にブログが書けて、三日坊主にならない方法を模索したい感じですね。 （前回はCSSの勉強、というよりデザインのダメダメさ、がキツくて意欲だだ下がりしていたので…）
@@ -90,31 +90,35 @@ Hugoの凄い所 今回初めてHugoを使って、今始めての記事を書�
  適度にがんばります。   -- ">
 <meta property="og:locale" content="ja">
 
-
+  
     <meta property="article:published_time" content="2018-12-12T08:00:00">
-
-
+  
+  
     <meta property="article:modified_time" content="2018-12-12T08:00:00">
-
-
-
-
+  
+  
+  
+    
       <meta property="article:section" content="開発">
-
-
-
-
+    
+  
+  
+    
       <meta property="article:tag" content="開発">
-
+    
       <meta property="article:tag" content="Hugo">
-
+    
       <meta property="article:tag" content="GitHub">
-
-
+    
+  
 
 
 <meta name="twitter:card" content="summary">
 
+  <meta name="twitter:site" content="@tc_minami">
+
+
+  <meta name="twitter:creator" content="@tc_minami">
 
 
 
@@ -131,210 +135,202 @@ Hugoの凄い所 今回初めてHugoを使って、今始めての記事を書�
 
     <title>Hugo &#43; GitHub Pagesでブログ作成してみた件</title>
 
-    <link rel="icon" href="https://tc-minami.github.io/favicon.png">
+    <link rel="icon" href="./img/favicon.png">
+    
 
-
-
+    
 
     <link rel="canonical" href="https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
 
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
-
-
+    
+    
     <link rel="stylesheet" href="https://tc-minami.github.io/css/style-nnm2spxvve8onlujjlegkkytaehyadd4ksxc1hyzzq9a2wvtrgbljqyulomn.min.css" />
+    
 
+    
+    
+    
+    
 
+    
+      
+        <link rel="stylesheet"  href="https://tc-minami.github.io/css/nc-text.css">
+      
+    
 
-
-
+    
+      
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-44238770-4', 'auto');
-
-    ga('send', 'pageview');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-44238770-4', 'auto');
+	
+	ga('send', 'pageview');
 }
 </script>
 
-
-
+    
+    
   </head>
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="3">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://tc-minami.github.io/">ノマドコーダー</a>
   </div>
-
-
+  
+    
       <a class="header-right-picture "
-         href="https://tc-minami.github.io/#about">
-
-
-
-
+         href="https://tc-minami.github.io/">
+    
+    
+    
+      
         <img class="header-picture" src="https://user-images.githubusercontent.com/8590431/49858824-8f3bad80-fe28-11e8-8144-ae707c9fec8c.png" alt="プロフィール画像" />
-
-
+      
+    
     </a>
-
+  
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="3">
   <div class="sidebar-container">
-
+    
       <div class="sidebar-profile">
         <a href="https://tc-minami.github.io/#about">
           <img class="sidebar-profile-picture" src="https://user-images.githubusercontent.com/8590431/49858824-8f3bad80-fe28-11e8-8144-ae707c9fec8c.png" alt="プロフィール画像" />
         </a>
         <h4 class="sidebar-profile-name">南ひろあき</h4>
-
+        
+          <h5 class="sidebar-profile-bio">色々な国を巡ってノマドっぽい生活したい人。</h5>
+        
       </div>
-
+    
     <ul class="sidebar-buttons">
-
+      
   <li class="sidebar-button">
-
+    
       <a class="sidebar-button-link " href="https://tc-minami.github.io/">
-
+    
       <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-
+      
       <span class="sidebar-button-desc">ホーム</span>
     </a>
   </li>
 
   <li class="sidebar-button">
-
+    
       <a class="sidebar-button-link " href="https://tc-minami.github.io/categories">
-
+    
       <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-
+      
       <span class="sidebar-button-desc">カテゴリー</span>
     </a>
   </li>
 
   <li class="sidebar-button">
-
+    
       <a class="sidebar-button-link " href="https://tc-minami.github.io/tags">
-
+    
       <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-
+      
       <span class="sidebar-button-desc">タグ</span>
     </a>
   </li>
 
   <li class="sidebar-button">
-
+    
       <a class="sidebar-button-link " href="https://tc-minami.github.io/archives">
-
+    
       <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-
+      
       <span class="sidebar-button-desc">アーカイブ</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-
-      <a class="sidebar-button-link " href="https://tc-minami.github.io/#about">
-
-      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-
-      <span class="sidebar-button-desc">プロフィール</span>
     </a>
   </li>
 
 
     </ul>
     <ul class="sidebar-buttons">
-
+      
   <li class="sidebar-button">
-
-      <a class="sidebar-button-link " href="https://github.com/kakawait" target="_blank" rel="noopener">
-
+    
+      <a class="sidebar-button-link " href="https://github.com/tc-minami" target="_blank" rel="noopener">
+    
       <i class="sidebar-button-icon fa fa-lg fa-github"></i>
-
+      
       <span class="sidebar-button-desc">GitHub</span>
     </a>
   </li>
 
   <li class="sidebar-button">
-
-      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener">
-
-      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
-
-      <span class="sidebar-button-desc">Stack Overflow</span>
+    
+      <a class="sidebar-button-link " href="https://qiita.com/tc_minami" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-quora"></i>
+      
+      <span class="sidebar-button-desc">Qiita</span>
     </a>
   </li>
 
 
     </ul>
     <ul class="sidebar-buttons">
-
-  <li class="sidebar-button">
-
-      <a class="sidebar-button-link " href="https://tc-minami.github.io/index.xml">
-
-      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-
-      <span class="sidebar-button-desc">RSS</span>
-    </a>
-  </li>
-
+      
 
     </ul>
   </div>
 </nav>
 
+      
 
-
-      <div id="main" data-behavior="1"
+      <div id="main" data-behavior="3"
         class="
                hasCoverMetaIn
                ">
         <article class="post" itemscope itemType="http://schema.org/BlogPosting">
-
-
+          
+          
             <div class="post-header main-content-wrap text-left">
-
+  
     <h1 class="post-title" itemprop="headline">
       Hugo &#43; GitHub Pagesでブログ作成してみた件
     </h1>
-
-
+  
+  
   <div class="postShorten-meta post-meta">
-
+    
       <time itemprop="datePublished" datetime="2018-12-12T08:00:00&#43;07:00">
-
+        
   12 12, 2018
 
       </time>
-
-
-
-
+    
+    
+  
+  
     <span>カテゴリー</span>
-
+    
       <a class="category-link" href="https://tc-minami.github.io/categories/%e9%96%8b%e7%99%ba">開発</a>
-
-
+    
+  
 
   </div>
 
 </div>
-
+          
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-
+              
 
 <p>見切り発車満載ですが、以前まで試していた自作CSSでのブログ開発は一旦止めて、Hugoを使ってブログを進めてみようかと思います。</p>
 
@@ -388,17 +384,17 @@ if (!doNotTrack) {
 </figure>
  -->
 
-
+              
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
-
-
-
-
+            
+              
+                
+                
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">タグ</span><br/>
-
+                    
   <a class="tag tag--primary tag--small" href="https://tc-minami.github.io/tags/%E9%96%8B%E7%99%BA/">開発</a>
 
   <a class="tag tag--primary tag--small" href="https://tc-minami.github.io/tags/hugo/">Hugo</a>
@@ -406,216 +402,218 @@ if (!doNotTrack) {
   <a class="tag tag--primary tag--small" href="https://tc-minami.github.io/tags/github/">GitHub</a>
 
                   </div>
-
-
-
+                
+              
+            
             <div class="post-actions-wrap">
-
+  
       <nav >
         <ul class="post-actions post-action-nav">
-
+          
             <li class="post-action">
-
+              
                 <a class="post-action-btn btn btn--default tooltip--top" href="https://tc-minami.github.io/2018/12/%E7%94%BB%E5%83%8F%E3%81%AE%E7%AE%A1%E7%90%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/" data-tooltip="画像の管理について">
-
+              
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">次</span>
                 </a>
             </li>
             <li class="post-action">
-
+              
                 <a class="post-action-btn btn btn--disabled">
-
+              
                   <span class="hide-xs hide-sm text-small icon-mr">前</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
-
+          
         </ul>
       </nav>
     <ul class="post-actions post-action-share" >
-
+      
         <li class="post-action hide-lg hide-md hide-sm">
           <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
             <i class="fa fa-share-alt"></i>
           </a>
         </li>
-
+        
           <li class="post-action hide-xs">
             <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
-
+        
           <li class="post-action hide-xs">
             <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
-
+        
           <li class="post-action hide-xs">
             <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
-
-
-
+        
+      
+      
         <li class="post-action">
           <a class="post-action-btn btn btn--default" href="#disqus_thread">
             <i class="fa fa-comment-o"></i>
           </a>
         </li>
-
+      
       <li class="post-action">
-
+        
           <a class="post-action-btn btn btn--default" href="#">
-
+        
           <i class="fa fa-list"></i>
         </a>
       </li>
     </ul>
-
+  
 </div>
 
-
-
+            
+              
                 <div id="disqus_thread">
   <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-
-
+              
+            
           </div>
         </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2018 南ひろあき. All Rights Reserved
+    &copy; 2018 <a href="https://github.com/tc-minami">tc-minami</a>. All Rights Reserved
   </span>
 </footer>
 
       </div>
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="3">
         <div class="post-actions-wrap">
-
+  
       <nav >
         <ul class="post-actions post-action-nav">
-
+          
             <li class="post-action">
-
+              
                 <a class="post-action-btn btn btn--default tooltip--top" href="https://tc-minami.github.io/2018/12/%E7%94%BB%E5%83%8F%E3%81%AE%E7%AE%A1%E7%90%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/" data-tooltip="画像の管理について">
-
+              
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">次</span>
                 </a>
             </li>
             <li class="post-action">
-
+              
                 <a class="post-action-btn btn btn--disabled">
-
+              
                   <span class="hide-xs hide-sm text-small icon-mr">前</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
-
+          
         </ul>
       </nav>
     <ul class="post-actions post-action-share" >
-
+      
         <li class="post-action hide-lg hide-md hide-sm">
           <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
             <i class="fa fa-share-alt"></i>
           </a>
         </li>
-
+        
           <li class="post-action hide-xs">
             <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
-
+        
           <li class="post-action hide-xs">
             <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
-
+        
           <li class="post-action hide-xs">
             <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
-
-
-
+        
+      
+      
         <li class="post-action">
           <a class="post-action-btn btn btn--default" href="#disqus_thread">
             <i class="fa fa-comment-o"></i>
           </a>
         </li>
-
+      
       <li class="post-action">
-
+        
           <a class="post-action-btn btn btn--default" href="#">
-
+        
           <i class="fa fa-list"></i>
         </a>
       </li>
     </ul>
-
+  
 </div>
 
       </div>
-      <div id="share-options-bar" class="share-options-bar" data-behavior="1">
+      <div id="share-options-bar" class="share-options-bar" data-behavior="3">
   <i id="btn-close-shareoptions" class="fa fa-close"></i>
   <ul class="share-options">
-
+    
       <li class="share-option">
         <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftc-minami.github.io%2F2018%2F12%2Fhugo-github-pages%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E4%25BD%259C%25E6%2588%2590%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E4%25BB%25B6%2F">
           <i class="fa fa-facebook-official"></i><span>Facebookで共有</span>
         </a>
       </li>
-
+    
       <li class="share-option">
         <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Ftc-minami.github.io%2F2018%2F12%2Fhugo-github-pages%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E4%25BD%259C%25E6%2588%2590%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E4%25BB%25B6%2F">
           <i class="fa fa-twitter"></i><span>Twitterで共有</span>
         </a>
       </li>
-
+    
       <li class="share-option">
         <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Ftc-minami.github.io%2F2018%2F12%2Fhugo-github-pages%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E4%25BD%259C%25E6%2588%2590%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E4%25BB%25B6%2F">
           <i class="fa fa-google-plus"></i><span>Google&#43;で共有</span>
         </a>
       </li>
-
+    
   </ul>
 </div>
 <div id="share-options-mask" class="share-options-mask"></div>
     </div>
-
+    
     <div id="about">
   <div id="about-card">
     <div id="about-btn-close">
       <i class="fa fa-remove"></i>
     </div>
-
+    
       <img id="about-card-picture" src="https://user-images.githubusercontent.com/8590431/49858824-8f3bad80-fe28-11e8-8144-ae707c9fec8c.png" alt="プロフィール画像" />
-
+    
     <h4 id="about-card-name">南ひろあき</h4>
-
-
+    
+      <div id="about-card-bio">色々な国を巡ってノマドっぽい生活したい人。</div>
+    
+    
       <div id="about-card-job">
         <i class="fa fa-briefcase"></i>
         <br/>
-        エンジニアリーダー
+        エンジニア/ブリッジSE/中間管理職
       </div>
-
-
+    
+    
       <div id="about-card-location">
         <i class="fa fa-map-marker"></i>
         <br/>
         ベトナム
       </div>
-
+    
   </div>
 </div>
 
@@ -636,10 +634,31 @@ if (!doNotTrack) {
     <div class="modal-body">
       <div class="no-result text-color-light text-center"></div>
       <div class="results">
-
-
+        
+        
           <div class="media">
-
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/hugo%E3%81%AB%E8%87%AA%E4%BD%9Ccss%E3%82%92%E9%81%A9%E7%94%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/">
+                <h3 class="media-heading">Hugoに自作CSSを適用する方法</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Dec 12, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">以前Hugoでブログはじめました～！って時に色の付け方がわからないとか言ってましたが、思ったより簡単に出来たので方法をまとめておきます。
+以前の記事で触れてたフォントの変更方法もわかったけど、そもそも使いたいフォントを探していないので今回はスルーします。（）
+自作CSSを適用するために必要なもの  自作CSS
+以上。  今回は以下な感じでどシンプルなcssを書いてみました。
+/* Basic css for Text related things. Color info https://www.wanichan.com/web/resources/color.html */ span.b { font-weight: bold; } span.red { color: orangered; } span.gray { color: darkgray; } span.large { font-size: 1.5em; } span.small { font-size: 0.75em; } span.ul { border-bottom: solid 3px;} span.ul-red { border-bottom: solid 3px orangered;} span.ul-gray { border-bottom: solid 3px darkgray;} span.dul { border-bottom: dotted 3px;} span.slash { text-decoration: line-through; }  自作CSSを適用する方法  プロジェクト直下のstaticフォルダ配下にcssファイルを配置する。  画像ファイル等を置いているstaticフォルダを同じ場所です。  themes以下でcssを取り込んでいるhtmlファイルを検索する。  &lt;link rel=&quot;stylesheet&quot; href=&quot;で検索し、他のcssを取り込んでいる場所を探しました。 そこに自作したcssを取り込むコードを以下のように記述するだけで、一瞬で反映されます。   CSSを取り込むコードのサンプル</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
             <div class="media-body">
               <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/%E7%94%BB%E5%83%8F%E3%81%AE%E7%AE%A1%E7%90%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">
                 <h3 class="media-heading">画像の管理について</h3>
@@ -661,9 +680,9 @@ if (!doNotTrack) {
             <div style="clear:both;"></div>
             <hr>
           </div>
-
+        
           <div class="media">
-
+            
             <div class="media-body">
               <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
                 <h3 class="media-heading">Hugo &#43; GitHub Pagesでブログ作成してみた件</h3>
@@ -695,7 +714,7 @@ Hugoの凄い所 今回初めてHugoを使って、今始めての記事を書�
             <div style="clear:both;"></div>
             <hr>
           </div>
-
+        
       </div>
     </div>
     <div class="modal-footer">
@@ -703,19 +722,19 @@ Hugoの凄い所 今回初めてHugoを使って、今始めての記事を書�
          data-message-zero=""
          data-message-one=""
          data-message-other="">
-         2 posts found
+         3 posts found
       </p>
     </div>
   </div>
 </div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://tc-minami.github.io/images/blue-259458_640.jpg');"></div>
+  
 
 
-
-    <div id="cover" style="background-image:url('https://tc-minami.github.io/images/cover.jpg');"></div>
-
-
-
-
+    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
@@ -754,18 +773,18 @@ $(document).ready(function() {
 </script>
 
 
-
-
+  
+    
       <script>
         var disqus_config = function () {
           this.page.url = 'https:\/\/tc-minami.github.io\/2018\/12\/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6\/';
-
+          
             this.page.identifier = '\/2018\/12\/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6\/'
-
+          
         };
         (function() {
-
-
+          
+          
           if (window.location.hostname == "localhost") {
             return;
           }
@@ -777,12 +796,13 @@ $(document).ready(function() {
           (d.head || d.body).appendChild(s);
         })();
       </script>
+    
+  
 
 
 
 
-
-
-
+    
   </body>
 </html>
+

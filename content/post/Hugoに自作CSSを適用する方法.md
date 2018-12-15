@@ -1,6 +1,6 @@
 ---
 title: "Hugoに自作CSSを適用する方法"
-date: 2018-12-13T11:38:33+07:00
+date: 2018-12-15T12:38:33+07:00
 draft: false
 
 categories:
@@ -9,6 +9,10 @@ tags:
 - 開発
 - Hugo
 - CSS
+keywords:
+- Hugo
+- CSS
+- ブログ
 
 thumbnailImagePosition: "left"
 thumbnailImage: https://user-images.githubusercontent.com/8590431/49916201-68cf4e00-fecc-11e8-85a6-73fc7b435f57.png
@@ -53,3 +57,20 @@ span.slash { text-decoration: line-through; }
 2. `themes`以下で`css`を取り込んでいる`html`ファイルを検索する。
     - `<link rel="stylesheet" href="`で検索し、他の`css`を取り込んでいる場所を探しました。
     - そこに自作した`css`を取り込むコードを以下のように記述するだけで、一瞬で反映されます。
+
+CSSを取り込むコードのサンプル
+
+``` html
+<!--CUSTOM STYLES-->
+<link rel="stylesheet" href="/css/nc-text.css" />
+<!--CUSTOM STYLES END-->
+```
+
+※さも今後複数の`css`を追加するかのようなコメントつけてますが、正直そこまで`css`を実装/調整することはないかなと思います…。
+
+### まとめ
+ウェブ側のお約束だったりサーバー側の知識が皆無なので、`css`とか使った調整はあまり考えていなかったのですが、あまりにも簡単に調整できてびっくりです。
+
+今後余裕があればちょこちょこカスタマイズしていきたいなーと思っています。
+
+まだ触って一週間程度だけど、<span class="b">Hugoさん思ってた以上に便利</span>でびっくり。

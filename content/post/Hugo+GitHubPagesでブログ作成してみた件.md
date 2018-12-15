@@ -9,6 +9,11 @@ tags:
 - 開発
 - Hugo
 - GitHub
+keywords:
+- Hugo
+- Github
+- GitHub pages
+- ブログ
 
 #thumbnailImagePosition: left
 #thumbnailImage: /img/profile_image.png

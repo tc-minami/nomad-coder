@@ -6,10 +6,19 @@
     <description>Recent content in Tags on ノマドコーダー</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 13 Dec 2018 01:16:14 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 15 Dec 2018 12:38:33 +0700</lastBuildDate>
     
 	<atom:link href="https://tc-minami.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Css</title>
+      <link>https://tc-minami.github.io/tags/css/</link>
+      <pubDate>Sat, 15 Dec 2018 12:38:33 +0700</pubDate>
+      
+      <guid>https://tc-minami.github.io/tags/css/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Github</title>
@@ -23,7 +32,7 @@
     <item>
       <title>Hugo</title>
       <link>https://tc-minami.github.io/tags/hugo/</link>
-      <pubDate>Thu, 13 Dec 2018 01:16:14 +0700</pubDate>
+      <pubDate>Sat, 15 Dec 2018 12:38:33 +0700</pubDate>
       
       <guid>https://tc-minami.github.io/tags/hugo/</guid>
       <description></description>
@@ -32,7 +41,7 @@
     <item>
       <title>開発</title>
       <link>https://tc-minami.github.io/tags/%E9%96%8B%E7%99%BA/</link>
-      <pubDate>Thu, 13 Dec 2018 01:16:14 +0700</pubDate>
+      <pubDate>Sat, 15 Dec 2018 12:38:33 +0700</pubDate>
       
       <guid>https://tc-minami.github.io/tags/%E9%96%8B%E7%99%BA/</guid>
       <description></description>

@@ -6,10 +6,23 @@
     <description>Recent content in 開発 on ノマドコーダー</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 13 Dec 2018 01:16:14 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 15 Dec 2018 12:38:33 +0700</lastBuildDate>
     
 	<atom:link href="https://tc-minami.github.io/categories/%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugoに自作CSSを適用する方法</title>
+      <link>https://tc-minami.github.io/2018/12/hugo%E3%81%AB%E8%87%AA%E4%BD%9Ccss%E3%82%92%E9%81%A9%E7%94%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 15 Dec 2018 12:38:33 +0700</pubDate>
+      
+      <guid>https://tc-minami.github.io/2018/12/hugo%E3%81%AB%E8%87%AA%E4%BD%9Ccss%E3%82%92%E9%81%A9%E7%94%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid>
+      <description>以前Hugoでブログはじめました～！って時に色の付け方がわからないとか言ってましたが、思ったより簡単に出来たので方法をまとめておきます。
+以前の記事で触れてたフォントの変更方法もわかったけど、そもそも使いたいフォントを探していないので今回はスルーします。（）
+自作CSSを適用するために必要なもの  自作CSS
+以上。  今回は以下な感じでどシンプルなcssを書いてみました。
+/* Basic css for Text related things. Color info https://www.wanichan.com/web/resources/color.html */ span.b { font-weight: bold; } span.red { color: orangered; } span.gray { color: darkgray; } span.large { font-size: 1.5em; } span.small { font-size: 0.75em; } span.ul { border-bottom: solid 3px;} span.ul-red { border-bottom: solid 3px orangered;} span.ul-gray { border-bottom: solid 3px darkgray;} span.dul { border-bottom: dotted 3px;} span.slash { text-decoration: line-through; }  自作CSSを適用する方法  プロジェクト直下のstaticフォルダ配下にcssファイルを配置する。  画像ファイル等を置いているstaticフォルダを同じ場所です。  themes以下でcssを取り込んでいるhtmlファイルを検索する。  &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;で検索し、他のcssを取り込んでいる場所を探しました。 そこに自作したcssを取り込むコードを以下のように記述するだけで、一瞬で反映されます。   CSSを取り込むコードのサンプル</description>
+    </item>
     
     <item>
       <title>画像の管理について</title>
