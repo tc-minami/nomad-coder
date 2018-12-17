@@ -1,6 +1,6 @@
 ---
 title: "Pythonを勉強してみる:PyGame編"
-date: 2018-12-17T12:00:00+07:00
+date: 2018-12-20T12:00:00+07:00
 draft: false
 
 categories:
