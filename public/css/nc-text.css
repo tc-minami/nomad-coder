@@ -1,0 +1,19 @@
+/*
+Basic css for Text related things.
+
+Color info
+https://www.wanichan.com/web/resources/color.html
+*/
+span.b { font-weight: bold; }
+
+span.red { color: orangered; }
+span.gray { color: darkgray; }
+
+span.large { font-size: 1.5em; }
+span.small { font-size: 0.75em; }
+
+span.ul { border-bottom: solid 3px;}
+span.ul-red { border-bottom: solid 3px orangered;}
+span.ul-gray { border-bottom: solid 3px darkgray;}
+span.dul { border-bottom: dotted 3px;}
+span.slash { text-decoration: line-through; }

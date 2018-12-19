@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小ネタ on ノマドコーダー</title>
+    <link>https://tc-minami.github.io/tags/%E5%B0%8F%E3%83%8D%E3%82%BF/</link>
+    <description>Recent content in 小ネタ on ノマドコーダー</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 18 Dec 2018 10:46:29 +0700</lastBuildDate>
+    
+	<atom:link href="https://tc-minami.github.io/tags/%E5%B0%8F%E3%83%8D%E3%82%BF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【初心者用】Hugoで作成したブログをGoogle検索結果に表示させる方法まとめ</title>
+      <link>https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/</link>
+      <pubDate>Tue, 18 Dec 2018 10:46:29 +0700</pubDate>
+      
+      <guid>https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/</guid>
+      <description>現状の集客数が0人な件について GitHub PagesとHugoを用いてブログを作って早一週間、GoogleAnalyticsを導入して1つ気がついた事が。
+それはPVがあまりにも少ないということ。
+もちろん素人が作ったブログがPV数稼げるだなんて思ってはいませんが…、流石に自分以外0人は少なすぎるだろうと思い、理由を調べてみました。そこで可能性として上がったのが検索エンジンに登録してないということ。
+Google Search Consoleで確認してみた所ーーー
+ Google Search Console は、Google 検索結果でのサイトの掲載順位を監視、管理、改善するのに役立つ Google の無料サービスです。Search Console に登録しなくても Google 検索結果にサイトが表示されるようにすることはできますが、Search Console に登録することで、Google のサイトに対する認識を理解し、改善できるようになります。
+ 一応ここに登録しなくてもなんとかできるっぽいですが、基本的に登録しないとまともなPVは期待できなさそうな感じですね…。
+Google Search Consoleに登録してみた というわけで早速登録してみました。
+さっき登録したばっかりなのでどれくらい検索結果に出やすくなるの？というのは未実証ですが、登録内容/手順だけでもまとめておきます。
+Google Search Consoleの登録手順 : アカウント登録〜ログイン Google Search Consoleは通常のGmailアカウントがあればそれでログイン可能です。 Google Search ConsoleにアクセスしてGmailアカウントでログインしてください。
+Google Search Consoleの登録手順 : サイト登録 Google Search Consoleの左上のプロパティを検索メニューからプロパティを追加します。 次にサイトのTOPページのURLを記入します。 （自分のサイトの場合はhttps://tc-minami.github.io/と記入します。） こんな感じで登録したURLが表示されたらサイトの登録は無事完了です。
+Google Search Consoleの登録手順 : サイトマップ登録 次にGoogleがあなたのサイトの更新などを把握できるように、サイトマップの登録を行います。サイトマップとは名前の通りサイトの地図ようなもので、これを登録することでGoogleはあなたのサイトがどのような構成かを把握することができます。
+詳しく知りたい方はSearch Consoleヘルプのサイトマップについてを確認してください。
+サイトマップのメニューは画面左のインデックス &amp;gt; サイトマップを開いてください。
+その後以下の画面でサイトマップが存在するURLを登録します。Hugoを使用している場合はindex.xmlというサイトマップファイルがpublicフォルダ配下に作成されていますので、index.xmlと記入してください。
+Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録と、サイトマップの登録が完了した後、あなたのサイトのURLを直接検索しましょう。下記のようにあなたのサイトが検索結果に表示された場合、Google Search Consoleへの登録は無事完了です。</description>
+    </item>
+    
+  </channel>
+</rss>
