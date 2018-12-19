@@ -7,94 +7,158 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.52 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="南ひろあき">
-<meta name="keywords" content="ブログ, Google Search Console, Google, SEO, ノマドコーダー, Nomad Coder, 開発, 開発ブログ, 技術ブログ, 技術, ノマド, コーダー">
-<meta name="description" content="現状の集客数が0人な件について GitHub PagesとHugoを用いてブログを作って早一週間、GoogleAnalyticsを導入して1つ気がついた事が。
-それはPVがあまりにも少ないということ。
-もちろん素人が作ったブログがPV数稼げるだなんて思ってはいませんが…、流石に自分以外0人は少なすぎるだろうと思い、理由を調べてみました。そこで可能性として上がったのが検索エンジンに登録してないということ。
-Google Search Consoleで確認してみた所ーーー
- Google Search Console は、Google 検索結果でのサイトの掲載順位を監視、管理、改善するのに役立つ Google の無料サービスです。Search Console に登録しなくても Google 検索結果にサイトが表示されるようにすることはできますが、Search Console に登録することで、Google のサイトに対する認識を理解し、改善できるようになります。
- 一応ここに登録しなくてもなんとかできるっぽいですが、基本的に登録しないとまともなPVは期待できなさそうな感じですね…。
-Google Search Consoleに登録してみた というわけで早速登録してみました。
-さっき登録したばっかりなのでどれくらい検索結果に出やすくなるの？というのは未実証ですが、登録内容/手順だけでもまとめておきます。
-Google Search Consoleの登録手順 : アカウント登録〜ログイン Google Search Consoleは通常のGmailアカウントがあればそれでログイン可能です。 Google Search ConsoleにアクセスしてGmailアカウントでログインしてください。
-Google Search Consoleの登録手順 : サイト登録 Google Search Consoleの左上のプロパティを検索メニューからプロパティを追加します。 次にサイトのTOPページのURLを記入します。 （自分のサイトの場合はhttps://tc-minami.github.io/と記入します。） こんな感じで登録したURLが表示されたらサイトの登録は無事完了です。
-Google Search Consoleの登録手順 : サイトマップ登録 次にGoogleがあなたのサイトの更新などを把握できるように、サイトマップの登録を行います。サイトマップとは名前の通りサイトの地図ようなもので、これを登録することでGoogleはあなたのサイトがどのような構成かを把握することができます。
-詳しく知りたい方はSearch Consoleヘルプのサイトマップについてを確認してください。
-サイトマップのメニューは画面左のインデックス &gt; サイトマップを開いてください。
-その後以下の画面でサイトマップが存在するURLを登録します。Hugoを使用している場合はindex.xmlというサイトマップファイルがpublicフォルダ配下に作成されていますので、index.xmlと記入してください。
-Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録と、サイトマップの登録が完了した後、あなたのサイトのURLを直接検索しましょう。下記のようにあなたのサイトが検索結果に表示された場合、Google Search Consoleへの登録は無事完了です。">
+<meta name="keywords" content="python, Python3, pygame, PySDL2, ノマドコーダー, Nomad Coder, 開発, 開発ブログ, 技術ブログ, 技術, ノマド, コーダー">
+<meta name="description" content="Pythonを勉強しよう 突然ですが、実は私開発スキルの幅がかなーり少なく、まともにできるのはAndroidネイティブ開発とUnity用いたスマートフォンアプリ開発ぐらいだったりします。
+こりゃやべえってなったので今Web側で需要がありそうな言語調べてPythonの勉強初めてみました。
+なぜPython? そもそもなぜ数ある言語の中からPythonを選んだかが、ですがいくつかの理由があります。
+まず、自分がスマホのクライアント開発しか出来ない状態なのでWeb側で使える言語を探していました。 また以前から地味に気になっていた機械学習等にPythonが非常に向いている点、かつ海外では一般的にRubyよりPythonのほうが需要があると聞き、Pythonの勉強を始めることにしました。
+私が選んだPythonの勉強方法 とりあえず何はともあれ無料で勉強したかったので、paizaラーニングにてPython3を勉強してみることに…。
+3って何？2もあるの？？というレベルの初心者ですが一応paizaのPython3コースは一通り完了。ただ最低限の文法が覚えた気がするけど、実用できる気が一切しない…。
+ということで、元々スマホゲームアプリは作りなれているのもあって「勉強がてらPCで動くミニゲーム作ってみよう」という結論に至りました。
+そしてその結果「Pythonでゲーム開発するならpygame」を使うと良いらしい、という情報をGETしました。
+pygameの勉強しようとして気がついたこと なにやらpygameは長年Pythonユーザーに親しまれてきたゲーム開発用のライブラリとのこと。 特に疑うこともなく、「へー」と思いながらpygameを触ってみることに。
+で、さっそくpygameでHellowWorld作ったり、画像表示、キー入力サンプル作ってキャッキャしてた時にとあるサイトで衝撃の文章が…。
+ Pygameは、Pythonのゲーム制作用モジュールです。
+主にコンピュータグラフィクスと音声を扱うための機能が備わっています。
+このライブラリは複数のプラットフォームで統一的に使えるSDLというマルチメディアAPIライブラリから作られています。
+よって、Pygameで作られたゲームはWindows、Mac、Linux上で動かすことが出来ます。
+ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ …あれ？
+ ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ oh&hellip;
+pygame、開発終了してるやん。
+というより後継ライブラリがいるって事はpygameもう使わない方が良いってことでは…？
+pygameを使わない方が良い理由 一応本当にpygame使わない方が良いの？という視点で調べて見たのですが…
+ pygameの最新版は2009年8月にリリース。 = Python3未対応 = 64bit未対応  とのこと。
+pygame公式で更新が… @ 7月2018年 ということでpygameの勉強は中止して、今後はPySDL2について調べてみようかな？と思ったけどpygameの公式サイトを見てみると思わぬ更新が。
+
+pygame 1.9.4 released — 19 Jul, 2018
+
+pygame、普通に更新来てた。
+しかもちゃんとPython3.7対応してるっぽいです。
+コレ見る限り、pygameを使うこと自体は特に問題なさそうですね。
+まとめ 結局pygameとPySDL2どっち使おうかな？というのはまた今度調べてみます。
+ただそもそもPytho自体詳しくないので、最新のpygameが使いづらくなってるとかじゃなければ昔から存在する＝情報が探しやすいpygameの方を使う可能性が高めかな〜と思っています。">
 
 
-<meta property="og:description" content="現状の集客数が0人な件について GitHub PagesとHugoを用いてブログを作って早一週間、GoogleAnalyticsを導入して1つ気がついた事が。
-それはPVがあまりにも少ないということ。
-もちろん素人が作ったブログがPV数稼げるだなんて思ってはいませんが…、流石に自分以外0人は少なすぎるだろうと思い、理由を調べてみました。そこで可能性として上がったのが検索エンジンに登録してないということ。
-Google Search Consoleで確認してみた所ーーー
- Google Search Console は、Google 検索結果でのサイトの掲載順位を監視、管理、改善するのに役立つ Google の無料サービスです。Search Console に登録しなくても Google 検索結果にサイトが表示されるようにすることはできますが、Search Console に登録することで、Google のサイトに対する認識を理解し、改善できるようになります。
- 一応ここに登録しなくてもなんとかできるっぽいですが、基本的に登録しないとまともなPVは期待できなさそうな感じですね…。
-Google Search Consoleに登録してみた というわけで早速登録してみました。
-さっき登録したばっかりなのでどれくらい検索結果に出やすくなるの？というのは未実証ですが、登録内容/手順だけでもまとめておきます。
-Google Search Consoleの登録手順 : アカウント登録〜ログイン Google Search Consoleは通常のGmailアカウントがあればそれでログイン可能です。 Google Search ConsoleにアクセスしてGmailアカウントでログインしてください。
-Google Search Consoleの登録手順 : サイト登録 Google Search Consoleの左上のプロパティを検索メニューからプロパティを追加します。 次にサイトのTOPページのURLを記入します。 （自分のサイトの場合はhttps://tc-minami.github.io/と記入します。） こんな感じで登録したURLが表示されたらサイトの登録は無事完了です。
-Google Search Consoleの登録手順 : サイトマップ登録 次にGoogleがあなたのサイトの更新などを把握できるように、サイトマップの登録を行います。サイトマップとは名前の通りサイトの地図ようなもので、これを登録することでGoogleはあなたのサイトがどのような構成かを把握することができます。
-詳しく知りたい方はSearch Consoleヘルプのサイトマップについてを確認してください。
-サイトマップのメニューは画面左のインデックス &gt; サイトマップを開いてください。
-その後以下の画面でサイトマップが存在するURLを登録します。Hugoを使用している場合はindex.xmlというサイトマップファイルがpublicフォルダ配下に作成されていますので、index.xmlと記入してください。
-Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録と、サイトマップの登録が完了した後、あなたのサイトのURLを直接検索しましょう。下記のようにあなたのサイトが検索結果に表示された場合、Google Search Consoleへの登録は無事完了です。">
+<meta property="og:description" content="Pythonを勉強しよう 突然ですが、実は私開発スキルの幅がかなーり少なく、まともにできるのはAndroidネイティブ開発とUnity用いたスマートフォンアプリ開発ぐらいだったりします。
+こりゃやべえってなったので今Web側で需要がありそうな言語調べてPythonの勉強初めてみました。
+なぜPython? そもそもなぜ数ある言語の中からPythonを選んだかが、ですがいくつかの理由があります。
+まず、自分がスマホのクライアント開発しか出来ない状態なのでWeb側で使える言語を探していました。 また以前から地味に気になっていた機械学習等にPythonが非常に向いている点、かつ海外では一般的にRubyよりPythonのほうが需要があると聞き、Pythonの勉強を始めることにしました。
+私が選んだPythonの勉強方法 とりあえず何はともあれ無料で勉強したかったので、paizaラーニングにてPython3を勉強してみることに…。
+3って何？2もあるの？？というレベルの初心者ですが一応paizaのPython3コースは一通り完了。ただ最低限の文法が覚えた気がするけど、実用できる気が一切しない…。
+ということで、元々スマホゲームアプリは作りなれているのもあって「勉強がてらPCで動くミニゲーム作ってみよう」という結論に至りました。
+そしてその結果「Pythonでゲーム開発するならpygame」を使うと良いらしい、という情報をGETしました。
+pygameの勉強しようとして気がついたこと なにやらpygameは長年Pythonユーザーに親しまれてきたゲーム開発用のライブラリとのこと。 特に疑うこともなく、「へー」と思いながらpygameを触ってみることに。
+で、さっそくpygameでHellowWorld作ったり、画像表示、キー入力サンプル作ってキャッキャしてた時にとあるサイトで衝撃の文章が…。
+ Pygameは、Pythonのゲーム制作用モジュールです。
+主にコンピュータグラフィクスと音声を扱うための機能が備わっています。
+このライブラリは複数のプラットフォームで統一的に使えるSDLというマルチメディアAPIライブラリから作られています。
+よって、Pygameで作られたゲームはWindows、Mac、Linux上で動かすことが出来ます。
+ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ …あれ？
+ ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ oh&hellip;
+pygame、開発終了してるやん。
+というより後継ライブラリがいるって事はpygameもう使わない方が良いってことでは…？
+pygameを使わない方が良い理由 一応本当にpygame使わない方が良いの？という視点で調べて見たのですが…
+ pygameの最新版は2009年8月にリリース。 = Python3未対応 = 64bit未対応  とのこと。
+pygame公式で更新が… @ 7月2018年 ということでpygameの勉強は中止して、今後はPySDL2について調べてみようかな？と思ったけどpygameの公式サイトを見てみると思わぬ更新が。
+
+pygame 1.9.4 released — 19 Jul, 2018
+
+pygame、普通に更新来てた。
+しかもちゃんとPython3.7対応してるっぽいです。
+コレ見る限り、pygameを使うこと自体は特に問題なさそうですね。
+まとめ 結局pygameとPySDL2どっち使おうかな？というのはまた今度調べてみます。
+ただそもそもPytho自体詳しくないので、最新のpygameが使いづらくなってるとかじゃなければ昔から存在する＝情報が探しやすいpygameの方を使う可能性が高めかな〜と思っています。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【初心者用】Hugoで作成したブログをGoogle検索結果に表示させる方法まとめ">
-<meta name="twitter:title" content="【初心者用】Hugoで作成したブログをGoogle検索結果に表示させる方法まとめ">
-<meta property="og:url" content="https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
-<meta property="twitter:url" content="https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
+<meta property="og:title" content="【pygame】Python3を勉強する際、どのライブラリを使うべきか悩んだ話">
+<meta name="twitter:title" content="【pygame】Python3を勉強する際、どのライブラリを使うべきか悩んだ話">
+<meta property="og:url" content="https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
+<meta property="twitter:url" content="https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
 <meta property="og:site_name" content="ノマドコーダー">
-<meta property="og:description" content="現状の集客数が0人な件について GitHub PagesとHugoを用いてブログを作って早一週間、GoogleAnalyticsを導入して1つ気がついた事が。
-それはPVがあまりにも少ないということ。
-もちろん素人が作ったブログがPV数稼げるだなんて思ってはいませんが…、流石に自分以外0人は少なすぎるだろうと思い、理由を調べてみました。そこで可能性として上がったのが検索エンジンに登録してないということ。
-Google Search Consoleで確認してみた所ーーー
- Google Search Console は、Google 検索結果でのサイトの掲載順位を監視、管理、改善するのに役立つ Google の無料サービスです。Search Console に登録しなくても Google 検索結果にサイトが表示されるようにすることはできますが、Search Console に登録することで、Google のサイトに対する認識を理解し、改善できるようになります。
- 一応ここに登録しなくてもなんとかできるっぽいですが、基本的に登録しないとまともなPVは期待できなさそうな感じですね…。
-Google Search Consoleに登録してみた というわけで早速登録してみました。
-さっき登録したばっかりなのでどれくらい検索結果に出やすくなるの？というのは未実証ですが、登録内容/手順だけでもまとめておきます。
-Google Search Consoleの登録手順 : アカウント登録〜ログイン Google Search Consoleは通常のGmailアカウントがあればそれでログイン可能です。 Google Search ConsoleにアクセスしてGmailアカウントでログインしてください。
-Google Search Consoleの登録手順 : サイト登録 Google Search Consoleの左上のプロパティを検索メニューからプロパティを追加します。 次にサイトのTOPページのURLを記入します。 （自分のサイトの場合はhttps://tc-minami.github.io/と記入します。） こんな感じで登録したURLが表示されたらサイトの登録は無事完了です。
-Google Search Consoleの登録手順 : サイトマップ登録 次にGoogleがあなたのサイトの更新などを把握できるように、サイトマップの登録を行います。サイトマップとは名前の通りサイトの地図ようなもので、これを登録することでGoogleはあなたのサイトがどのような構成かを把握することができます。
-詳しく知りたい方はSearch Consoleヘルプのサイトマップについてを確認してください。
-サイトマップのメニューは画面左のインデックス &gt; サイトマップを開いてください。
-その後以下の画面でサイトマップが存在するURLを登録します。Hugoを使用している場合はindex.xmlというサイトマップファイルがpublicフォルダ配下に作成されていますので、index.xmlと記入してください。
-Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録と、サイトマップの登録が完了した後、あなたのサイトのURLを直接検索しましょう。下記のようにあなたのサイトが検索結果に表示された場合、Google Search Consoleへの登録は無事完了です。">
-<meta name="twitter:description" content="現状の集客数が0人な件について GitHub PagesとHugoを用いてブログを作って早一週間、GoogleAnalyticsを導入して1つ気がついた事が。
-それはPVがあまりにも少ないということ。
-もちろん素人が作ったブログがPV数稼げるだなんて思ってはいませんが…、流石に自分以外0人は少なすぎるだろうと思い、理由を調べてみました。そこで可能性として上がったのが検索エンジンに登録してないということ。
-Google Search Consoleで確認してみた所ーーー
- Google Search Console は、Google 検索結果でのサイトの掲載順位を監視、管理、改善するのに役立つ Google の無料サービスです。Search Console に登録しなくても Google 検索結果にサイトが表示されるようにすることはできますが、Search Console に登録することで、Google のサイトに対する認識を理解し、改善できるようになります。
- 一応ここに登録しなくてもなんとかできるっぽいですが、基本的に登録しないとまともなPVは期待できなさそうな感じですね…。
-Google Search Consoleに登録してみた というわけで早速登録してみました。
-さっき登録したばっかりなのでどれくらい検索結果に出やすくなるの？というのは未実証ですが、登録内容/手順だけでもまとめておきます。
-Google Search Consoleの登録手順 : アカウント登録〜ログイン Google Search Consoleは通常のGmailアカウントがあればそれでログイン可能です。 Google Search ConsoleにアクセスしてGmailアカウントでログインしてください。
-Google Search Consoleの登録手順 : サイト登録 Google Search Consoleの左上のプロパティを検索メニューからプロパティを追加します。 次にサイトのTOPページのURLを記入します。 （自分のサイトの場合はhttps://tc-minami.github.io/と記入します。） こんな感じで登録したURLが表示されたらサイトの登録は無事完了です。
-Google Search Consoleの登録手順 : サイトマップ登録 次にGoogleがあなたのサイトの更新などを把握できるように、サイトマップの登録を行います。サイトマップとは名前の通りサイトの地図ようなもので、これを登録することでGoogleはあなたのサイトがどのような構成かを把握することができます。
-詳しく知りたい方はSearch Consoleヘルプのサイトマップについてを確認してください。
-サイトマップのメニューは画面左のインデックス &gt; サイトマップを開いてください。
-その後以下の画面でサイトマップが存在するURLを登録します。Hugoを使用している場合はindex.xmlというサイトマップファイルがpublicフォルダ配下に作成されていますので、index.xmlと記入してください。
-Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録と、サイトマップの登録が完了した後、あなたのサイトのURLを直接検索しましょう。下記のようにあなたのサイトが検索結果に表示された場合、Google Search Consoleへの登録は無事完了です。">
+<meta property="og:description" content="Pythonを勉強しよう 突然ですが、実は私開発スキルの幅がかなーり少なく、まともにできるのはAndroidネイティブ開発とUnity用いたスマートフォンアプリ開発ぐらいだったりします。
+こりゃやべえってなったので今Web側で需要がありそうな言語調べてPythonの勉強初めてみました。
+なぜPython? そもそもなぜ数ある言語の中からPythonを選んだかが、ですがいくつかの理由があります。
+まず、自分がスマホのクライアント開発しか出来ない状態なのでWeb側で使える言語を探していました。 また以前から地味に気になっていた機械学習等にPythonが非常に向いている点、かつ海外では一般的にRubyよりPythonのほうが需要があると聞き、Pythonの勉強を始めることにしました。
+私が選んだPythonの勉強方法 とりあえず何はともあれ無料で勉強したかったので、paizaラーニングにてPython3を勉強してみることに…。
+3って何？2もあるの？？というレベルの初心者ですが一応paizaのPython3コースは一通り完了。ただ最低限の文法が覚えた気がするけど、実用できる気が一切しない…。
+ということで、元々スマホゲームアプリは作りなれているのもあって「勉強がてらPCで動くミニゲーム作ってみよう」という結論に至りました。
+そしてその結果「Pythonでゲーム開発するならpygame」を使うと良いらしい、という情報をGETしました。
+pygameの勉強しようとして気がついたこと なにやらpygameは長年Pythonユーザーに親しまれてきたゲーム開発用のライブラリとのこと。 特に疑うこともなく、「へー」と思いながらpygameを触ってみることに。
+で、さっそくpygameでHellowWorld作ったり、画像表示、キー入力サンプル作ってキャッキャしてた時にとあるサイトで衝撃の文章が…。
+ Pygameは、Pythonのゲーム制作用モジュールです。
+主にコンピュータグラフィクスと音声を扱うための機能が備わっています。
+このライブラリは複数のプラットフォームで統一的に使えるSDLというマルチメディアAPIライブラリから作られています。
+よって、Pygameで作られたゲームはWindows、Mac、Linux上で動かすことが出来ます。
+ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ …あれ？
+ ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ oh&hellip;
+pygame、開発終了してるやん。
+というより後継ライブラリがいるって事はpygameもう使わない方が良いってことでは…？
+pygameを使わない方が良い理由 一応本当にpygame使わない方が良いの？という視点で調べて見たのですが…
+ pygameの最新版は2009年8月にリリース。 = Python3未対応 = 64bit未対応  とのこと。
+pygame公式で更新が… @ 7月2018年 ということでpygameの勉強は中止して、今後はPySDL2について調べてみようかな？と思ったけどpygameの公式サイトを見てみると思わぬ更新が。
+
+pygame 1.9.4 released — 19 Jul, 2018
+
+pygame、普通に更新来てた。
+しかもちゃんとPython3.7対応してるっぽいです。
+コレ見る限り、pygameを使うこと自体は特に問題なさそうですね。
+まとめ 結局pygameとPySDL2どっち使おうかな？というのはまた今度調べてみます。
+ただそもそもPytho自体詳しくないので、最新のpygameが使いづらくなってるとかじゃなければ昔から存在する＝情報が探しやすいpygameの方を使う可能性が高めかな〜と思っています。">
+<meta name="twitter:description" content="Pythonを勉強しよう 突然ですが、実は私開発スキルの幅がかなーり少なく、まともにできるのはAndroidネイティブ開発とUnity用いたスマートフォンアプリ開発ぐらいだったりします。
+こりゃやべえってなったので今Web側で需要がありそうな言語調べてPythonの勉強初めてみました。
+なぜPython? そもそもなぜ数ある言語の中からPythonを選んだかが、ですがいくつかの理由があります。
+まず、自分がスマホのクライアント開発しか出来ない状態なのでWeb側で使える言語を探していました。 また以前から地味に気になっていた機械学習等にPythonが非常に向いている点、かつ海外では一般的にRubyよりPythonのほうが需要があると聞き、Pythonの勉強を始めることにしました。
+私が選んだPythonの勉強方法 とりあえず何はともあれ無料で勉強したかったので、paizaラーニングにてPython3を勉強してみることに…。
+3って何？2もあるの？？というレベルの初心者ですが一応paizaのPython3コースは一通り完了。ただ最低限の文法が覚えた気がするけど、実用できる気が一切しない…。
+ということで、元々スマホゲームアプリは作りなれているのもあって「勉強がてらPCで動くミニゲーム作ってみよう」という結論に至りました。
+そしてその結果「Pythonでゲーム開発するならpygame」を使うと良いらしい、という情報をGETしました。
+pygameの勉強しようとして気がついたこと なにやらpygameは長年Pythonユーザーに親しまれてきたゲーム開発用のライブラリとのこと。 特に疑うこともなく、「へー」と思いながらpygameを触ってみることに。
+で、さっそくpygameでHellowWorld作ったり、画像表示、キー入力サンプル作ってキャッキャしてた時にとあるサイトで衝撃の文章が…。
+ Pygameは、Pythonのゲーム制作用モジュールです。
+主にコンピュータグラフィクスと音声を扱うための機能が備わっています。
+このライブラリは複数のプラットフォームで統一的に使えるSDLというマルチメディアAPIライブラリから作られています。
+よって、Pygameで作られたゲームはWindows、Mac、Linux上で動かすことが出来ます。
+ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ …あれ？
+ ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ oh&hellip;
+pygame、開発終了してるやん。
+というより後継ライブラリがいるって事はpygameもう使わない方が良いってことでは…？
+pygameを使わない方が良い理由 一応本当にpygame使わない方が良いの？という視点で調べて見たのですが…
+ pygameの最新版は2009年8月にリリース。 = Python3未対応 = 64bit未対応  とのこと。
+pygame公式で更新が… @ 7月2018年 ということでpygameの勉強は中止して、今後はPySDL2について調べてみようかな？と思ったけどpygameの公式サイトを見てみると思わぬ更新が。
+
+pygame 1.9.4 released — 19 Jul, 2018
+
+pygame、普通に更新来てた。
+しかもちゃんとPython3.7対応してるっぽいです。
+コレ見る限り、pygameを使うこと自体は特に問題なさそうですね。
+まとめ 結局pygameとPySDL2どっち使おうかな？というのはまた今度調べてみます。
+ただそもそもPytho自体詳しくないので、最新のpygameが使いづらくなってるとかじゃなければ昔から存在する＝情報が探しやすいpygameの方を使う可能性が高めかな〜と思っています。">
 <meta property="og:locale" content="ja">
 
   
-    <meta property="article:published_time" content="2018-12-18T10:46:29">
+    <meta property="article:published_time" content="2018-12-19T12:00:00">
   
   
-    <meta property="article:modified_time" content="2018-12-18T10:46:29">
+    <meta property="article:modified_time" content="2018-12-19T12:00:00">
   
-  
-  
-    
-      <meta property="article:section" content="ブログ">
-    
   
   
     
-      <meta property="article:tag" content="ブログ">
+      <meta property="article:section" content="開発">
     
-      <meta property="article:tag" content="小ネタ">
+  
+  
+    
+      <meta property="article:tag" content="開発">
+    
+      <meta property="article:tag" content="Python">
     
   
 
@@ -111,8 +175,8 @@ Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録�
 
 
 
-  <meta property="og:image" content="https://user-images.githubusercontent.com/8590431/50065615-0a66e000-01ea-11e9-98a0-aa30c228cc30.jpg">
-  <meta property="twitter:image" content="https://user-images.githubusercontent.com/8590431/50065615-0a66e000-01ea-11e9-98a0-aa30c228cc30.jpg">
+  <meta property="og:image" content="https://user-images.githubusercontent.com/8590431/50209656-e43a6f00-03a6-11e9-990b-32ea3538f849.png">
+  <meta property="twitter:image" content="https://user-images.githubusercontent.com/8590431/50209656-e43a6f00-03a6-11e9-990b-32ea3538f849.png">
 
 
 
@@ -122,14 +186,14 @@ Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録�
   <meta property="twitter:image" content="https://user-images.githubusercontent.com/8590431/49858824-8f3bad80-fe28-11e8-8144-ae707c9fec8c.png">
 
 
-    <title>【初心者用】Hugoで作成したブログをGoogle検索結果に表示させる方法まとめ</title>
+    <title>【pygame】Python3を勉強する際、どのライブラリを使うべきか悩んだ話</title>
 
     <link rel="icon" href="./img/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
+    <link rel="canonical" href="https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -289,15 +353,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      【初心者用】Hugoで作成したブログをGoogle検索結果に表示させる方法まとめ
+      【pygame】Python3を勉強する際、どのライブラリを使うべきか悩んだ話
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-12-18T10:46:29&#43;07:00">
+      <time itemprop="datePublished" datetime="2018-12-19T12:00:00&#43;07:00">
         
-  12 18, 2018
+  12 19, 2018
 
       </time>
     
@@ -306,7 +370,7 @@ if (!doNotTrack) {
   
     <span>カテゴリー</span>
     
-      <a class="category-link" href="https://tc-minami.github.io/categories/%e3%83%96%e3%83%ad%e3%82%b0">ブログ</a>
+      <a class="category-link" href="https://tc-minami.github.io/categories/%e9%96%8b%e7%99%ba">開発</a>
     
   
 
@@ -318,84 +382,91 @@ if (!doNotTrack) {
             <div class="main-content-wrap">
               
 
-<h2 id="現状の集客数が0人な件について">現状の集客数が0人な件について</h2>
+<h2 id="pythonを勉強しよう">Pythonを勉強しよう</h2>
 
-<p><img src="https://user-images.githubusercontent.com/8590431/50065673-4dc14e80-01ea-11e9-9bab-bbb73bfe3f48.png" alt"PVが0人な件について" align="center" width="200" height="300"></p>
+<p><img height="300" src="https://user-images.githubusercontent.com/8590431/50209656-e43a6f00-03a6-11e9-990b-32ea3538f849.png"></p>
 
-<p>GitHub PagesとHugoを用いてブログを作って早一週間、<a href="https://analytics.google.com/analytics/web/">GoogleAnalytics</a>を導入して1つ気がついた事が。</p>
+<p>突然ですが、実は私開発スキルの幅がかなーり少なく、まともにできるのはAndroidネイティブ開発とUnity用いたスマートフォンアプリ開発ぐらいだったりします。</p>
 
-<p>それはPVが<span class="b">あまりにも少ない</span>ということ。</p>
+<p><span class="large b">こりゃやべえ</span>ってなったので今Web側で需要がありそうな言語調べてPythonの勉強初めてみました。</p>
 
-<p>もちろん素人が作ったブログがPV数稼げるだなんて思ってはいませんが…、<span class="b red large">流石に自分以外0人は少なすぎる</span>だろうと思い、理由を調べてみました。そこで可能性として上がったのが<span class="b">検索エンジンに登録してない</b>ということ。</p>
+<h3 id="なぜpython">なぜPython?</h3>
 
-<p><a href="https://support.google.com/webmasters/answer/9128668?hl=ja&visit_id=636806170387774180-4071874264&rd=1">Google Search Console</a>で確認してみた所ーーー</p>
+<p>そもそもなぜ数ある言語の中からPythonを選んだかが、ですがいくつかの理由があります。</p>
+
+<p>まず、自分がスマホのクライアント開発しか出来ない状態なのでWeb側で使える言語を探していました。
+また以前から地味に気になっていた<span class="b red">機械学習等にPythonが非常に向いている</span>点、かつ<span class="b red">海外では一般的にRubyよりPythonのほうが需要がある</span>と聞き、Pythonの勉強を始めることにしました。</p>
+
+<h3 id="私が選んだpythonの勉強方法">私が選んだPythonの勉強方法</h3>
+
+<p>とりあえず何はともあれ<span class="b">無料</span>で勉強したかったので、<a href="https://paiza.jp/works/">paizaラーニング</a>にて<code>Python3</code>を勉強してみることに…。</p>
+
+<p>3って何？2もあるの？？というレベルの初心者ですが一応paizaの<code>Python3</code>コースは一通り完了。ただ<span class="red b">最低限の文法が覚えた気がするけど、実用できる気が一切しない…</span>。</p>
+
+<p>ということで、元々スマホゲームアプリは作りなれているのもあって<span class="b">「勉強がてらPCで動くミニゲーム作ってみよう」</span>という結論に至りました。</p>
+
+<p>そしてその結果<span class="b">「Pythonでゲーム開発するなら<a href="http://www.pygame.org/hifi.html">pygame</a>」を使うと良いらしい</span>、という情報をGETしました。</p>
+
+<h3 id="pygameの勉強しようとして気がついたこと">pygameの勉強しようとして気がついたこと</h3>
+
+<p>なにやらpygameは長年Pythonユーザーに親しまれてきたゲーム開発用のライブラリとのこと。
+特に疑うこともなく、「へー」と思いながらpygameを触ってみることに。</p>
+
+<p>で、さっそくpygameでHellowWorld作ったり、画像表示、キー入力サンプル作ってキャッキャしてた時に<a href="http://gamepro.blog.jp/python/pygame/introduction">とあるサイト</a>で衝撃の文章が…。</p>
 
 <blockquote>
-<p>Google Search Console は、Google 検索結果でのサイトの掲載順位を監視、管理、改善するのに役立つ Google の無料サービスです。Search Console に登録しなくても Google 検索結果にサイトが表示されるようにすることはできますが、Search Console に登録することで、Google のサイトに対する認識を理解し、改善できるようになります。</p>
+<p>Pygameは、Pythonのゲーム制作用モジュールです。</p>
+
+<p>主にコンピュータグラフィクスと音声を扱うための機能が備わっています。</p>
+
+<p>このライブラリは複数のプラットフォームで統一的に使えるSDLというマルチメディアAPIライブラリから作られています。</p>
+
+<p>よって、Pygameで作られたゲームはWindows、Mac、Linux上で動かすことが出来ます。</p>
+
+<p>ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)</p>
 </blockquote>
 
-<p>一応ここに登録しなくてもなんとかできるっぽいですが、<span class="b red large">基本的に登録しないとまともなPVは期待できなさそう</span>な感じですね…。</p>
+<p>…あれ？</p>
 
-<h2 id="google-search-consoleに登録してみた">Google Search Consoleに登録してみた</h2>
+<blockquote>
+<p><span class="large red b"> ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)</span></p>
+</blockquote>
 
-<p>というわけで早速登録してみました。<br />
-さっき登録したばっかりなのでどれくらい検索結果に出やすくなるの？というのは未実証ですが、登録内容/手順だけでもまとめておきます。</p>
+<p>oh&hellip;<br />
+pygame、開発終了してるやん。<br />
+というより後継ライブラリがいるって事はpygameもう使わない方が良いってことでは…？</p>
 
-<h3 id="google-search-consoleの登録手順-アカウント登録-ログイン">Google Search Consoleの登録手順 : アカウント登録〜ログイン</h3>
+<h4 id="pygameを使わない方が良い理由">pygameを使わない方が良い理由</h4>
 
-<p>Google Search Consoleは通常のGmailアカウントがあればそれでログイン可能です。
-<a href="https://search.google.com/u/0/search-console?hl=ja">Google Search Console</a>にアクセスしてGmailアカウントでログインしてください。</p>
+<p>一応本当にpygame使わない方が良いの？という視点で調べて見たのですが…<br><br></p>
 
-<h3 id="google-search-consoleの登録手順-サイト登録">Google Search Consoleの登録手順 : サイト登録</h3>
+<ol>
+<li>pygameの最新版は2009年8月にリリース。</li>
+<li>= Python3未対応</li>
+<li>= 64bit未対応</li>
+</ol>
 
-<p><a href="https://search.google.com/u/0/search-console?hl=ja">Google Search Console</a>の左上の<b>プロパティを検索</b>メニューから<b>プロパティを追加</b>します。
-<img src="https://user-images.githubusercontent.com/8590431/50075664-1d8da600-0212-11e9-9abe-95f9ff81b352.png" width="400" height="300"></p>
+<p>とのこと。</p>
 
-<p>次にサイトのTOPページのURLを記入します。
-（自分のサイトの場合は<a href="https://tc-minami.github.io/">https://tc-minami.github.io/</a>と記入します。）
-<img src="https://user-images.githubusercontent.com/8590431/50075500-b66ff180-0211-11e9-8489-22100c3170e3.png" width="400" height="300"></p>
+<h3 id="pygame公式で更新が-7月2018年">pygame公式で更新が… @ 7月2018年</h3>
 
-<p>こんな感じで登録したURLが表示されたらサイトの登録は無事完了です。</p>
+<p>ということでpygameの勉強は中止して、今後は<span class="red b">PySDL2について調べてみようかな？</span>と思ったけどpygameの公式サイトを見てみると思わぬ更新が。</p>
 
-<h3 id="google-search-consoleの登録手順-サイトマップ登録">Google Search Consoleの登録手順 : サイトマップ登録</h3>
+<p><img height="400" alt="”pygameの更新履歴" title=”pygameの更新履歴" src="https://user-images.githubusercontent.com/8590431/50209432-49419500-03a6-11e9-9544-7493ae9eb9b4.png"></p>
 
-<p>次にGoogleがあなたのサイトの更新などを把握できるように、<b>サイトマップの登録</b>を行います。サイトマップとは名前の通りサイトの地図ようなもので、これを登録することでGoogleはあなたのサイトがどのような構成かを把握することができます。</p>
+<p><br><a href="https://www.pygame.org/news/2018/7/pygame-1-9-4-released">pygame 1.9.4 released — 19 Jul, 2018</a></p>
 
-<p>詳しく知りたい方はSearch Consoleヘルプの<a href="https://support.google.com/webmasters/answer/156184?hl=ja">サイトマップについて</a>を確認してください。</p>
+<p><br><span class="large b">pygame、普通に更新来てた。</span><br><br></p>
 
-<p>サイトマップのメニューは画面左の<code>インデックス &gt; サイトマップ</code>を開いてください。</p>
+<p>しかもちゃんとPython3.7対応してるっぽいです。</p>
 
-<p>その後以下の画面でサイトマップが存在するURLを登録します。<span class="b">Hugoを使用している場合は<code>index.xml</code>というサイトマップファイルが<code>public</code>フォルダ配下に作成されています</span>ので、<code>index.xml</code>と記入してください。</p>
-
-<p><img src="https://user-images.githubusercontent.com/8590431/50076475-5b8bc980-0214-11e9-958a-8ac62aabdf75.png" width="400" height="300"></p>
-
-<h3 id="google-search-consoleの登録手順-検索結果を確認">Google Search Consoleの登録手順 : 検索結果を確認</h3>
-
-<p>サイトの登録と、サイトマップの登録が完了した後、あなたのサイトのURLを直接検索しましょう。下記のようにあなたのサイトが検索結果に表示された場合、Google Search Consoleへの登録は無事完了です。</p>
-
-<p><img src="https://user-images.githubusercontent.com/8590431/50076533-8d9d2b80-0214-11e9-8e22-2841adeb4180.png" width="400" height="300"></p>
+<p>コレ見る限り、pygameを使うこと自体は特に問題なさそうですね。</p>
 
 <h2 id="まとめ">まとめ</h2>
 
-<p>以前Livedoorブログを登録したときは特に何も気にしてませんでしたが、ブログサイトを自作する場合は公開するまでに色々と手順が必要なんですね…。</p>
+<p>結局pygameとPySDL2どっち使おうかな？というのはまた今度調べてみます。</p>
 
-<p>恐らくコレ以外にも設定漏れしていたり、ブログを運営する上で根本的な何かをミスしている可能性はありそうですが、そこら編は発覚し次第随時更新していきたいと思います。</p>
-
-<p>とりあえず今後は記事の検索結果や、PV等に大きな変化があったら共有していきます。特に何もなかった場合は、……そういうことなのでスルーしておいてください…。</p>
-
-<h3 id="後日談">後日談</h3>
-
-<p>登録した翌日にすこーしアクセス数増えて、かつこんなメールが<code>sc-noreply@google.com</code>から届きました！</p>
-
-<p>ということで、上記手順で無事検索エンジンへの登録（=Google検索結果への表示設定）が完了したっぽいです。</p>
-
-<blockquote>
-<p><a href="https://tc-minami.github.io/">https://tc-minami.github.io/</a> への Google 検索トラフィックを監視する</p>
-
-<p><a href="https://tc-minami.github.io/">https://tc-minami.github.io/</a> の所有者様</p>
-
-<p>12 16, 2018より Search Console でお客様のウェブサイトの Google 検索におけるインプレッション数が収集され始めましたことを、Google システムが確認しましたのでお知らせいたします。同時に、お客様のウェブサイトのページが、一部のクエリに対する Google 検索結果に表示されるようになりました。Search Console を使用してサイトの検索結果での掲載順位を確認する方法をご紹介いたします。</p>
-</blockquote>
+<p>ただそもそもPytho自体詳しくないので、最新のpygameが使いづらくなってるとかじゃなければ<span class="b red">昔から存在する＝情報が探しやすいpygameの方</span>を使う可能性が高めかな〜と思っています。</p>
 
               
             </div>
@@ -408,9 +479,9 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">タグ</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://tc-minami.github.io/tags/%E3%83%96%E3%83%AD%E3%82%B0/">ブログ</a>
+  <a class="tag tag--primary tag--small" href="https://tc-minami.github.io/tags/%E9%96%8B%E7%99%BA/">開発</a>
 
-  <a class="tag tag--primary tag--small" href="https://tc-minami.github.io/tags/%E5%B0%8F%E3%83%8D%E3%82%BF/">小ネタ</a>
+  <a class="tag tag--primary tag--small" href="https://tc-minami.github.io/tags/python/">Python</a>
 
                   </div>
                 
@@ -423,7 +494,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/" data-tooltip="【pygame】Python3を勉強する際、どのライブラリを使うべきか悩んだ話">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">次</span>
@@ -431,7 +502,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E8%87%AA%E4%BD%9Ccss%E3%82%92%E9%81%A9%E5%BF%9C%E3%81%99%E3%82%8B%E7%B0%A1%E5%8D%98%E3%81%AA%E6%96%B9%E6%B3%95css/" data-tooltip="【初心者用】Hugoで作成したブログに自作CSSを適応する簡単な方法【CSS】">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/" data-tooltip="【初心者用】Hugoで作成したブログをGoogle検索結果に表示させる方法まとめ">
               
                   <span class="hide-xs hide-sm text-small icon-mr">前</span>
                   <i class="fa fa-angle-right"></i>
@@ -449,19 +520,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -509,7 +580,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/" data-tooltip="【pygame】Python3を勉強する際、どのライブラリを使うべきか悩んだ話">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">次</span>
@@ -517,7 +588,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E8%87%AA%E4%BD%9Ccss%E3%82%92%E9%81%A9%E5%BF%9C%E3%81%99%E3%82%8B%E7%B0%A1%E5%8D%98%E3%81%AA%E6%96%B9%E6%B3%95css/" data-tooltip="【初心者用】Hugoで作成したブログに自作CSSを適応する簡単な方法【CSS】">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/" data-tooltip="【初心者用】Hugoで作成したブログをGoogle検索結果に表示させる方法まとめ">
               
                   <span class="hide-xs hide-sm text-small icon-mr">前</span>
                   <i class="fa fa-angle-right"></i>
@@ -535,19 +606,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -577,19 +648,19 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftc-minami.github.io%2F2018%2F12%2F%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%25E7%2594%25A8hugo%25E3%2581%25A7%25E4%25BD%259C%25E6%2588%2590%25E3%2581%2597%25E3%2581%259F%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%2592google%25E6%25A4%259C%25E7%25B4%25A2%25E7%25B5%2590%25E6%259E%259C%25E3%2581%25AB%25E8%25A1%25A8%25E7%25A4%25BA%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftc-minami.github.io%2F2018%2F12%2Fpygamepython3%25E3%2582%2592%25E5%258B%2589%25E5%25BC%25B7%25E3%2581%2599%25E3%2582%258B%25E9%259A%259B%25E3%2581%25A9%25E3%2581%25AE%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25B9%25E3%2581%258D%25E3%2581%258B%25E6%2582%25A9%25E3%2582%2593%25E3%2581%25A0%25E8%25A9%25B1%2F">
           <i class="fa fa-facebook-official"></i><span>Facebookで共有</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Ftc-minami.github.io%2F2018%2F12%2F%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%25E7%2594%25A8hugo%25E3%2581%25A7%25E4%25BD%259C%25E6%2588%2590%25E3%2581%2597%25E3%2581%259F%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%2592google%25E6%25A4%259C%25E7%25B4%25A2%25E7%25B5%2590%25E6%259E%259C%25E3%2581%25AB%25E8%25A1%25A8%25E7%25A4%25BA%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Ftc-minami.github.io%2F2018%2F12%2Fpygamepython3%25E3%2582%2592%25E5%258B%2589%25E5%25BC%25B7%25E3%2581%2599%25E3%2582%258B%25E9%259A%259B%25E3%2581%25A9%25E3%2581%25AE%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25B9%25E3%2581%258D%25E3%2581%258B%25E6%2582%25A9%25E3%2582%2593%25E3%2581%25A0%25E8%25A9%25B1%2F">
           <i class="fa fa-twitter"></i><span>Twitterで共有</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Ftc-minami.github.io%2F2018%2F12%2F%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%25E7%2594%25A8hugo%25E3%2581%25A7%25E4%25BD%259C%25E6%2588%2590%25E3%2581%2597%25E3%2581%259F%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%2592google%25E6%25A4%259C%25E7%25B4%25A2%25E7%25B5%2590%25E6%259E%259C%25E3%2581%25AB%25E8%25A1%25A8%25E7%25A4%25BA%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Ftc-minami.github.io%2F2018%2F12%2Fpygamepython3%25E3%2582%2592%25E5%258B%2589%25E5%25BC%25B7%25E3%2581%2599%25E3%2582%258B%25E9%259A%259B%25E3%2581%25A9%25E3%2581%25AE%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%25E3%2581%25B9%25E3%2581%258D%25E3%2581%258B%25E6%2582%25A9%25E3%2582%2593%25E3%2581%25A0%25E8%25A9%25B1%2F">
           <i class="fa fa-google-plus"></i><span>Google&#43;で共有</span>
         </a>
       </li>
@@ -870,9 +941,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/tc-minami.github.io\/2018\/12\/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81\/';
+          this.page.url = 'https:\/\/tc-minami.github.io\/2018\/12\/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1\/';
           
-            this.page.identifier = '\/2018\/12\/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81\/'
+            this.page.identifier = '\/2018\/12\/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1\/'
           
         };
         (function() {

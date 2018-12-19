@@ -334,6 +334,53 @@ if (!doNotTrack) {
           <div class="media">
             
             <div class="media-body">
+              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/">
+                <h3 class="media-heading">【pygame】Python3を勉強する際、どのライブラリを使うべきか悩んだ話</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Dec 12, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Pythonを勉強しよう 突然ですが、実は私開発スキルの幅がかなーり少なく、まともにできるのはAndroidネイティブ開発とUnity用いたスマートフォンアプリ開発ぐらいだったりします。
+こりゃやべえってなったので今Web側で需要がありそうな言語調べてPythonの勉強初めてみました。
+なぜPython? そもそもなぜ数ある言語の中からPythonを選んだかが、ですがいくつかの理由があります。
+まず、自分がスマホのクライアント開発しか出来ない状態なのでWeb側で使える言語を探していました。 また以前から地味に気になっていた機械学習等にPythonが非常に向いている点、かつ海外では一般的にRubyよりPythonのほうが需要があると聞き、Pythonの勉強を始めることにしました。
+私が選んだPythonの勉強方法 とりあえず何はともあれ無料で勉強したかったので、paizaラーニングにてPython3を勉強してみることに…。
+3って何？2もあるの？？というレベルの初心者ですが一応paizaのPython3コースは一通り完了。ただ最低限の文法が覚えた気がするけど、実用できる気が一切しない…。
+ということで、元々スマホゲームアプリは作りなれているのもあって「勉強がてらPCで動くミニゲーム作ってみよう」という結論に至りました。
+そしてその結果「Pythonでゲーム開発するならpygame」を使うと良いらしい、という情報をGETしました。
+pygameの勉強しようとして気がついたこと なにやらpygameは長年Pythonユーザーに親しまれてきたゲーム開発用のライブラリとのこと。 特に疑うこともなく、「へー」と思いながらpygameを触ってみることに。
+で、さっそくpygameでHellowWorld作ったり、画像表示、キー入力サンプル作ってキャッキャしてた時にとあるサイトで衝撃の文章が…。
+ Pygameは、Pythonのゲーム制作用モジュールです。
+主にコンピュータグラフィクスと音声を扱うための機能が備わっています。
+このライブラリは複数のプラットフォームで統一的に使えるSDLというマルチメディアAPIライブラリから作られています。
+よって、Pygameで作られたゲームはWindows、Mac、Linux上で動かすことが出来ます。
+ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ …あれ？
+ ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ oh&hellip;
+pygame、開発終了してるやん。
+というより後継ライブラリがいるって事はpygameもう使わない方が良いってことでは…？
+pygameを使わない方が良い理由 一応本当にpygame使わない方が良いの？という視点で調べて見たのですが…
+ pygameの最新版は2009年8月にリリース。 = Python3未対応 = 64bit未対応  とのこと。
+pygame公式で更新が… @ 7月2018年 ということでpygameの勉強は中止して、今後はPySDL2について調べてみようかな？と思ったけどpygameの公式サイトを見てみると思わぬ更新が。
+
+pygame 1.9.4 released — 19 Jul, 2018
+
+pygame、普通に更新来てた。
+しかもちゃんとPython3.7対応してるっぽいです。
+コレ見る限り、pygameを使うこと自体は特に問題なさそうですね。
+まとめ 結局pygameとPySDL2どっち使おうかな？というのはまた今度調べてみます。
+ただそもそもPytho自体詳しくないので、最新のpygameが使いづらくなってるとかじゃなければ昔から存在する＝情報が探しやすいpygameの方を使う可能性が高めかな〜と思っています。</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
               <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92google%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%BE%E3%81%A8%E3%82%81/">
                 <h3 class="media-heading">【初心者用】Hugoで作成したブログをGoogle検索結果に表示させる方法まとめ</h3>
               </a>
@@ -365,19 +412,19 @@ Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録�
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/hugo%E3%81%AB%E8%87%AA%E4%BD%9Ccss%E3%82%92%E9%81%A9%E7%94%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/">
-                <h3 class="media-heading">Hugoに自作CSSを適用する方法</h3>
+              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/%E5%88%9D%E5%BF%83%E8%80%85%E7%94%A8hugo%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E8%87%AA%E4%BD%9Ccss%E3%82%92%E9%81%A9%E5%BF%9C%E3%81%99%E3%82%8B%E7%B0%A1%E5%8D%98%E3%81%AA%E6%96%B9%E6%B3%95css/">
+                <h3 class="media-heading">【初心者用】Hugoで作成したブログに自作CSSを適応する簡単な方法【CSS】</h3>
               </a>
               <span class="media-meta">
                 <span class="media-date text-small">
                   Dec 12, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">以前Hugoでブログはじめました～！って時に色の付け方がわからないとか言ってましたが、思ったより簡単に出来たので方法をまとめておきます。
+              <div class="media-content hide-xs font-merryweather">CSSの反映が簡単に出来た件 以前Hugoでブログはじめました～！って時に色の付け方がわからないとか言ってましたが、思ったより簡単に出来たので方法をまとめておきます。
 以前の記事で触れてたフォントの変更方法もわかったけど、そもそも使いたいフォントを探していないので今回はスルーします。（）
 自作CSSを適用するために必要なもの  自作CSS
-以上。  今回は以下な感じでどシンプルなcssを書いてみました。
-/* Basic css for Text related things. Color info https://www.wanichan.com/web/resources/color.html */ span.b { font-weight: bold; } span.red { color: orangered; } span.gray { color: darkgray; } span.large { font-size: 1.5em; } span.small { font-size: 0.75em; } span.ul { border-bottom: solid 3px;} span.ul-red { border-bottom: solid 3px orangered;} span.ul-gray { border-bottom: solid 3px darkgray;} span.dul { border-bottom: dotted 3px;} span.slash { text-decoration: line-through; }  自作CSSを適用する方法  プロジェクト直下のstaticフォルダ配下にcssファイルを配置する。  画像ファイル等を置いているstaticフォルダを同じ場所です。  themes以下でcssを取り込んでいるhtmlファイルを検索する。  &lt;link rel=&quot;stylesheet&quot; href=&quot;で検索し、他のcssを取り込んでいる場所を探しました。 そこに自作したcssを取り込むコードを以下のように記述するだけで、一瞬で反映されます。   CSSを取り込むコードのサンプル</div>
+以上。  今回は以下な感じでどシンプルなCSSを書いてみました。
+/* Basic CSS for Text related things. Color info https://www.wanichan.com/web/resources/color.html */ span.b { font-weight: bold; } span.red { color: orangered; } span.gray { color: darkgray; } span.large { font-size: 1.5em; } span.small { font-size: 0.75em; } span.ul { border-bottom: solid 3px;} span.ul-red { border-bottom: solid 3px orangered;} span.ul-gray { border-bottom: solid 3px darkgray;} span.dul { border-bottom: dotted 3px;} span.slash { text-decoration: line-through; }  自作CSSを適用する方法  プロジェクト直下のstaticフォルダ配下にCSSファイルを配置する。  画像ファイル等を置いているstaticフォルダを同じ場所です。  themes以下でCSSを取り込んでいるhtmlファイルを検索する。  &lt;link rel=&quot;stylesheet&quot; href=&quot;で検索し、他のCSSを取り込んでいる場所を探しました。 そこに自作したCSSを取り込むコードを以下のように記述するだけで、一瞬で反映されます。   CSSを取り込むコードのサンプル</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -386,8 +433,8 @@ Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録�
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/%E7%94%BB%E5%83%8F%E3%81%AE%E7%AE%A1%E7%90%86%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">
-                <h3 class="media-heading">画像の管理について</h3>
+              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/github-pagesgithub%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E7%84%A1%E6%96%99%E3%81%A7%E3%81%A7%E3%81%8D%E3%82%8B%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E7%B0%A1%E5%8D%98%E7%94%BB%E5%83%8F%E7%AE%A1%E7%90%86%E6%96%B9%E6%B3%95hugo/">
+                <h3 class="media-heading">【GitHub Pages】GitHubを使った無料でできるブログの簡単画像管理方法【Hugo】</h3>
               </a>
               <span class="media-meta">
                 <span class="media-date text-small">
@@ -398,10 +445,10 @@ Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録�
 それはファイル容量制限とか大丈夫なん？という点です。
 軽く調べた所、Hugo的には↓のようにstaticフォルダ配下に画像を置いて、「ファイルパス使ってそこ参照してね♪」ってなってるっぽい。
 一般的にはそれで問題ないと思うけどGitHub Pages使っている以上あまり重たいファイルはリポジトリ内に置きたくなかったりするので、なんとか別の方法を考えてみることに…。
-[Hugoのフォルダ構成] GitHubを使った画像管理方法 DropboxやらGoogleDriveやら、無料で使えそうなサービスはいくつかあったのですが、今回せっかく全てをGitHubに寄せているのでファイル管理もGitHubに丸投げすることにしました。
+[Hugoのフォルダ構成] GitHubを使った画像管理方法 DropboxやらGoogleDriveやら、無料で使えそうなサービスはいくつかあったのですが、今回せっかく全てをGitHubに寄せているので思い切ってファイル管理もGitHubに丸投げすることにしました。
 実はGitHubのIssueって画像や動画をドラッグ＆ドロップするだけでGitHub側が勝手にUploadしてくれて、URLまで出力してくれます。そのため今回はリソースファイル専用のRepositoryとIssueを立てて、そこに各種ファイルをUpしてみることにしました。
-[GitHubに画像をUploadする方法] ※恐らくRepositoryを分ける必要はないと思うのですが、GitHub的に1Repositoryで1GBを超えるのは好ましくないようなので、念の為切り分けてあります。
-※Issueに貼り付けた画像がこの容量としてカウントされるのかは不明です。</div>
+[GitHubに画像をUploadする方法] 補足 恐らくRepositoryを分ける必要はないと思うのですが、GitHub的に1Repositoryで1GBを超えるのは好ましくないようなので、念の為切り分けてあります。
+Issueに貼り付けた画像がこの容量としてカウントされるのかは不明ですが、最悪カウントされた場合もRepositoryを複数用意すれば半永久的に画像の管理を無料で行えるのかな、と思っています。</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -410,17 +457,20 @@ Google Search Consoleの登録手順 : 検索結果を確認 サイトの登録�
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/hugo-github-pages%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E4%BB%B6/">
-                <h3 class="media-heading">Hugo &#43; GitHub Pagesでブログ作成してみた件</h3>
+              <a class="link-unstyled" href="https://tc-minami.github.io/2018/12/hugo%E7%84%A1%E6%96%99%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B%E7%B0%A1%E5%8D%98%E3%81%AA%E6%96%B9%E6%B3%95github-pages/">
+                <h3 class="media-heading">【Hugo】無料でブログを公開する簡単な方法【GitHub Pages】</h3>
               </a>
               <span class="media-meta">
                 <span class="media-date text-small">
                   Dec 12, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather"> 見切り発車満載ですが、以前まで試していた自作CSSでのブログ開発は一旦止めて、Hugoを使ってブログを進めてみようかと思います。
-なぜHugoに変更するか Hugo自体がどれだけ凄いのか、とは他の選択肢は？というのは正直よくわかっていません。現状言えるのは今のブログのトレンドが静的サイトジェネレーターを使うっぽいという事と、単にHugoという名前をよく見かけたからです。
-なのでとりあえずはHugoを使って色々試して、もしかしたらまた何かに以降する可能性はあります。今の所は手軽にブログが書けて、三日坊主にならない方法を模索したい感じですね。 （前回はCSSの勉強、というよりデザインのダメダメさ、がキツくて意欲だだ下がりしていたので…）
+              <div class="media-content hide-xs font-merryweather">見切り発車満載ですが、以前まで試していた自作CSSでのブログ開発は一旦止めて、Hugoを使ってブログを進めてみようかと思います。
+Hugoとは Hugoとは今流行りの静的サイトジェネレーターです。静的サイトジェネレーターって何？という方も多いと思いますがざっくり言うと簡単にHTML/CSSを用いたサイトが作れるモノという感じでイメージしています。
+JavaScript等を使った挙動の調整は不向きなようですが、私は手軽にサイトを作れるというメリットに惹かれて始めてみました。
+なぜHugoに変更するか Hugo自体がどれだけ凄いのか、とは他の選択肢は？というのは正直よくわかっていません。とりあえずわかっているのは最近のブログの多くが静的サイトジェネレーターを使用しているということと、今のはやりっぽいということぐらいだったりします。
+ちなみに数ある静的サイトジェネレーターからなぜHugoを選んだの？という点に関しては単純に調べている最中にHugoという単語を多く見かけたので、はやりに乗ってみよう感を出したかっただけです。
+なのでとりあえずはHugoを使って色々試して、もしかしたらまた何か別の静的サイトジェネレーターに移行する可能性はあります。とりあえず直近の目標としては、手軽にブログが書けて、三日坊主にならない方法を模索したいなと考えています。 （前回はHTML/CSSの勉強をして、デザインがうまくいかなかったりで意欲だだ下がりしていたので…）
 Hugoの凄い所 今回初めてHugoを使って、今始めての記事を書いている段階で何を知ったかぶっているんだという感はありますが、現段階で言えるのはHugoなら気軽にブログ続けられそうかな…？という点です。
 現段階でいくつかHugoいいなー、便利だなー、って思うことは多々あるのですが、移行の一番のきっかけとなったのが以下の3点です。
 1. デザインの調整が後からでも楽そう 大元の設定ファイルでテーマ切り替えしたり、レイアウトも調整できるらしいのでまずは流行ってそうなテーマダウンロードしてそのまま使っています。
@@ -435,7 +485,8 @@ Hugoの凄い所 今回初めてHugoを使って、今始めての記事を書�
 今はAtomで記事を書いているので、ソースコードを管理するみたいに簡単に各種ファイルを編集できるのは大きいですね。
 まとめ とりあえずHugoに移行して、Github Pages使って無料でブログ運用したいなー、出来れば広告とか入れてお小遣い欲しいなーと思っていますが、まずは三日坊主にならないように頑張りたいと思います。
 あと簡単な 太字、Codeの記述はいつもどおりできるけど、色文字やフォントの調整とか色々覚えていかないとですね。
- 適度にがんばります。   -- </div>
+[追記] 後日cssの反映方法についてまとめました。 想像以上に簡単に反映できたのでこれから色々調整していきますね。
+↓cssの反映方法 【初心者用】Hugoで作成したブログに自作CSSを適応する簡単な方法【CSS】</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -448,7 +499,7 @@ Hugoの凄い所 今回初めてHugoを使って、今始めての記事を書�
          data-message-zero=""
          data-message-one=""
          data-message-other="">
-         4 posts found
+         5 posts found
       </p>
     </div>
   </div>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on ノマドコーダー</title>
+    <link>https://tc-minami.github.io/tags/python/</link>
+    <description>Recent content in Python on ノマドコーダー</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 19 Dec 2018 12:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://tc-minami.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【pygame】Python3を勉強する際、どのライブラリを使うべきか悩んだ話</title>
+      <link>https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/</link>
+      <pubDate>Wed, 19 Dec 2018 12:00:00 +0700</pubDate>
+      
+      <guid>https://tc-minami.github.io/2018/12/pygamepython3%E3%82%92%E5%8B%89%E5%BC%B7%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%A9%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%86%E3%81%B9%E3%81%8D%E3%81%8B%E6%82%A9%E3%82%93%E3%81%A0%E8%A9%B1/</guid>
+      <description>Pythonを勉強しよう 突然ですが、実は私開発スキルの幅がかなーり少なく、まともにできるのはAndroidネイティブ開発とUnity用いたスマートフォンアプリ開発ぐらいだったりします。
+こりゃやべえってなったので今Web側で需要がありそうな言語調べてPythonの勉強初めてみました。
+なぜPython? そもそもなぜ数ある言語の中からPythonを選んだかが、ですがいくつかの理由があります。
+まず、自分がスマホのクライアント開発しか出来ない状態なのでWeb側で使える言語を探していました。 また以前から地味に気になっていた機械学習等にPythonが非常に向いている点、かつ海外では一般的にRubyよりPythonのほうが需要があると聞き、Pythonの勉強を始めることにしました。
+私が選んだPythonの勉強方法 とりあえず何はともあれ無料で勉強したかったので、paizaラーニングにてPython3を勉強してみることに…。
+3って何？2もあるの？？というレベルの初心者ですが一応paizaのPython3コースは一通り完了。ただ最低限の文法が覚えた気がするけど、実用できる気が一切しない…。
+ということで、元々スマホゲームアプリは作りなれているのもあって「勉強がてらPCで動くミニゲーム作ってみよう」という結論に至りました。
+そしてその結果「Pythonでゲーム開発するならpygame」を使うと良いらしい、という情報をGETしました。
+pygameの勉強しようとして気がついたこと なにやらpygameは長年Pythonユーザーに親しまれてきたゲーム開発用のライブラリとのこと。 特に疑うこともなく、「へー」と思いながらpygameを触ってみることに。
+で、さっそくpygameでHellowWorld作ったり、画像表示、キー入力サンプル作ってキャッキャしてた時にとあるサイトで衝撃の文章が…。
+ Pygameは、Pythonのゲーム制作用モジュールです。
+主にコンピュータグラフィクスと音声を扱うための機能が備わっています。
+このライブラリは複数のプラットフォームで統一的に使えるSDLというマルチメディアAPIライブラリから作られています。
+よって、Pygameで作られたゲームはWindows、Mac、Linux上で動かすことが出来ます。
+ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ …あれ？
+ ただし、現在は開発が停止しています。(後継ライブラリはPySDL2)
+ oh&amp;hellip;
+pygame、開発終了してるやん。
+というより後継ライブラリがいるって事はpygameもう使わない方が良いってことでは…？
+pygameを使わない方が良い理由 一応本当にpygame使わない方が良いの？という視点で調べて見たのですが…
+ pygameの最新版は2009年8月にリリース。 = Python3未対応 = 64bit未対応  とのこと。
+pygame公式で更新が… @ 7月2018年 ということでpygameの勉強は中止して、今後はPySDL2について調べてみようかな？と思ったけどpygameの公式サイトを見てみると思わぬ更新が。
+
+pygame 1.9.4 released — 19 Jul, 2018
+
+pygame、普通に更新来てた。
+しかもちゃんとPython3.7対応してるっぽいです。
+コレ見る限り、pygameを使うこと自体は特に問題なさそうですね。
+まとめ 結局pygameとPySDL2どっち使おうかな？というのはまた今度調べてみます。
+ただそもそもPytho自体詳しくないので、最新のpygameが使いづらくなってるとかじゃなければ昔から存在する＝情報が探しやすいpygameの方を使う可能性が高めかな〜と思っています。</description>
+    </item>
+    
+  </channel>
+</rss>
